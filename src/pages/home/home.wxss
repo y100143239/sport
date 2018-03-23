@@ -1,4 +1,214 @@
 @charset "UTF-8";
+.sidebar-hidden .sidebar-backdrop {
+  display: none;
+}
+
+.sidebar-visible .sidebar-backdrop {
+  display: block;
+}
+.sidebar-visible .progress-ring-canvas {
+  display: none;
+}
+.sidebar-visible .sidebar-toggle {
+  left: 520rpx;
+  top: 175rpx;
+  width: 98rpx;
+  height: 84rpx;
+}
+
+.sidebar-backdrop {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 520rpx;
+  background: repeat-y 0 0;
+  background-size: 100% auto;
+  transition: all .3s ease-in-out;
+}
+
+.sidebar-header {
+  padding-top: 142rpx;
+  background: no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.user-info {
+  position: relative;
+  width: 100%;
+  height: 123rpx;
+  background: no-repeat right 0;
+  background-size: 491rpx 123rpx;
+}
+
+.user-info-avatar {
+  z-index: -1;
+  position: absolute;
+  top: 17rpx;
+  left: 48rpx;
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.user-info-avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.user-info-cont {
+  padding: 26rpx 0 0 156rpx;
+  line-height: 1;
+  color: #ad5210;
+}
+
+.user-info-cont-name {
+  font-size: 36rpx;
+}
+
+.user-info-cont-id {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.user-info-cont-id .copy {
+  position: absolute;
+  top: 68rpx;
+  left: 340rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.user-info-edit {
+  position: absolute;
+  top: 32rpx;
+  right: 50rpx;
+  width: 48rpx;
+  padding-bottom: 2rpx;
+  line-height: 1;
+  color: #d9940b;
+  font-size: 24rpx;
+  border-bottom: solid 2rpx;
+}
+
+.setting-list {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0 0 78rpx;
+  color: #fefefe;
+  font-size: 24rpx;
+}
+
+.setting-item {
+  width: 158rpx;
+  height: 48rpx;
+  padding-left: 24rpx;
+  line-height: 46rpx;
+  text-align: center;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+.setting-location {
+  margin-left: 50rpx;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480rpx;
+  margin: 98rpx 0 0 52rpx;
+}
+
+.menu-item {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 57rpx 121rpx 0;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.bg-body, .sidebar {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_body.png);
+}
+
+.bg-constellation, .setting-constellation {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_constellation.png);
+}
+
+.bg-divider {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_divider.png);
+}
+
+.bg-header, .sidebar-header {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_header.png);
+}
+
+.bg-location, .setting-location {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_location.png);
+}
+
+.bg-profile, .user-info {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_profile.png);
+}
+
+.icon-about {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_about.png);
+}
+
+.icon-copy, .user-info-cont-id .copy {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_copy.png);
+}
+
+.icon-daily-trend {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_daily_trend.png);
+}
+
+.icon-friends {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_friends.png);
+}
+
+.icon-gratuity {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_gratuity.png);
+}
+
+.icon-has-new {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_has_new.png);
+}
+
+.icon-rank {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_rank.png);
+}
+
+.icon-sidebar-toggle, .sidebar-visible .sidebar-toggle {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_sidebar_toggle.png);
+}
+
+.icon-sociality {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_sociality.png);
+}
+
+.icon-statistics {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_statistics.png);
+}
+
+.icon-wallet {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_wallet.png);
+}
+
 .icon-map {
   background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_map.png);
 }
@@ -186,14 +396,16 @@
 }
 
 /* 侧滑开关按钮 */
-.page-toggle {
+.sidebar-toggle {
+  z-index: 100;
   position: absolute;
   left: 0rpx;
-  top: 170rpx;
+  top: 176rpx;
   width: 106rpx;
   height: 96rpx;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  transition: all .3s ease-in-out;
 }
 
 .weather {

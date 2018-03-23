@@ -1,0 +1,32 @@
+<view class="sidebar-backdrop"></view>
+<view class="sidebar">
+
+    <view class="sidebar-header">
+        <view class="user-info">
+            <view class="user-info-avatar"><image class="user-info-avatar-image" src="../../assets/images/local/avatar_demo.jpg"></image></view>
+            <view class="user-info-cont">
+                <view class="user-info-cont-name">某某某</view>
+                <view class="user-info-cont-id">ID:122565770<view class="copy"></view></view>
+            </view>
+            <view class="user-info-edit">编辑</view>
+        </view>
+    </view>
+
+    <view class="sidebar-body">
+        <view class="setting-list">
+            <view class="setting-item setting-constellation">未设置</view>
+            <view class="setting-item setting-location">武汉</view>
+        </view>
+        <view class="menu-list">
+            <view class="menu-item icon-friends">约运动</view>
+            <view class="menu-item icon-sociality"></view>
+            <view class="menu-item icon-daily-trend"></view>
+            <view class="menu-item icon-statistics"></view>
+            <view class="menu-item icon-wallet"></view>
+            <view class="menu-item icon-rank"></view>
+            <view class="menu-item icon-gratuity"></view>
+            <view class="menu-item icon-about"></view>
+        </view>
+    </view>
+
+</view>

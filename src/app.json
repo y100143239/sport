@@ -1,8 +1,8 @@
 {
   "debug": true,
   "pages":[
-    "pages/share/share",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/share/share"
   ],
   "window":{
     "backgroundTextStyle": "light",

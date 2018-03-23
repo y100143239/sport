@@ -1,5 +1,6 @@
 @import "../../public/scss/variables";
 @import "../../public/scss/mixin";
+@import "sidebar";
 @import "home_images";
 
 .page {
@@ -132,14 +133,17 @@
 //}
 
 /* 侧滑开关按钮 */
-.page-toggle {
+.sidebar-toggle {
+    z-index: 100;
     position: absolute;
     left: px2rpx(0);
-    top: px2rpx(170);
+    top: px2rpx(176);
     width: px2rpx(106);
     height: px2rpx(96);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
+    transition: all .3s ease-in-out;
 }
 
 .weather {

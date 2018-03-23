@@ -1,0 +1,69 @@
+@import "../../public/scss/variables";
+
+.bg-body {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_body.png);
+}
+
+.bg-constellation {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_constellation.png);
+}
+
+.bg-divider {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_divider.png);
+}
+
+.bg-header {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_header.png);
+}
+
+.bg-location {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_location.png);
+}
+
+.bg-profile {
+    background-image : url(#{$web-img-dir}/home/siderbar/bg_profile.png);
+}
+
+.icon-about {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_about.png);
+}
+
+.icon-copy {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_copy.png);
+}
+
+.icon-daily-trend {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_daily_trend.png);
+}
+
+.icon-friends {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_friends.png);
+}
+
+.icon-gratuity {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_gratuity.png);
+}
+
+.icon-has-new {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_has_new.png);
+}
+
+.icon-rank {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_rank.png);
+}
+
+.icon-sidebar-toggle {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_sidebar_toggle.png);
+}
+
+.icon-sociality {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_sociality.png);
+}
+
+.icon-statistics {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_statistics.png);
+}
+
+.icon-wallet {
+    background-image : url(#{$web-img-dir}/home/siderbar/icon_wallet.png);
+}
