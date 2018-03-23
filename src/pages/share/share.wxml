@@ -1,0 +1,36 @@
+<view class="page skin-night">
+
+    <view class="page-header">
+        <view class="skin-switcher"></view>
+    </view>
+
+    <view class="page-body">
+
+        <view class="steps-today">
+            <view class="steps-today-header">今日步数</view>
+            <view class="steps-today-body"><text class="num font-AlternateGothicNo2BT">4852</text>步</view>
+        </view>
+
+        <view class="steps-history">
+            <view class="steps-history-header">历史运动</view>
+            <view class="steps-history-body">
+                <view class="steps-history-item">累计运动<text class="num font-AlternateGothicNo2BT">32</text>天</view>
+                <view class="steps-history-item">本周健走<text class="num font-AlternateGothicNo2BT">28958</text>步</view>
+                <view class="steps-history-item">本月健走<text class="num font-AlternateGothicNo2BT">129695</text>步</view>
+            </view>
+
+        </view>
+
+    </view>
+
+    <view class="page-footer">
+        <view class="share-list">
+            <view class="share-item share-friends"></view>
+            <view class="share-item share-wexin"></view>
+            <view class="share-item share-qq"></view>
+            <view class="share-item share-qzone"></view>
+            <view class="share-item share-weibo"></view>
+        </view>
+    </view>
+
+</view>

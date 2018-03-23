@@ -1,0 +1,236 @@
+@import "../../public/scss/variables";
+@import "../../public/scss/mixin";
+@import "home_images";
+
+.page {
+    background-color: #c8f4fe;
+}
+.page-sky {
+    position: relative;
+    min-height: px2rpx(650);
+    background-repeat: repeat-x;
+}
+.page-map {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: px2rpx(686);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* 右侧功能按钮 */
+.fun-list {
+    position: absolute;
+    right: px2rpx(16);
+    top: px2rpx(52);
+}
+.fun-item {
+    width: px2rpx(100);
+    height: px2rpx(100);
+    margin-bottom: px2rpx(12);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 中央步数进度 */
+
+.progress {
+    position: absolute;
+    top: px2rpx(100);
+    left: px2rpx(204);
+    width: px2rpx(356);
+    height: px2rpx(356);
+    border-radius: 100%;
+    //background: #5eacc1;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+}
+
+.progress-num {
+    margin-top: px2rpx(74);
+    font-size: px2rpx(24);
+}
+.progress-steps {
+    margin-top: px2rpx(24);
+    font-size: px2rpx(28);
+}
+.progress-steps-num {
+    font-size: px2rpx(100);
+}
+.progress-energy {
+    height: px2rpx(28);
+    margin-top: px2rpx(24);
+    font-size: px2rpx(24);
+    overflow: hidden;
+}
+
+.progress-energy-item {
+    height: px2rpx(28);
+    line-height: px2rpx(28);
+    padding-right: px2rpx(30);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto px2rpx(24);
+}
+
+.progress-desc,
+.progress-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.progress-ring {
+    z-index: 10;
+}
+.progress-desc {
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+
+.progress-ring {
+    border-radius: 100%;
+}
+.progress-ring-canvas {
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 120%;
+}
+.progress-start {
+    position: absolute;
+    top: px2rpx(314);
+    left: px2rpx((356-50)/2);
+    width: px2rpx(64);
+    height: px2rpx(64);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.progress-desc-bg {
+    position: absolute;
+    top: px2rpx(20);
+    left: px2rpx(20);
+    width: px2rpx(356-40+2);
+    height: px2rpx(356-40+2);
+    border-radius: 100%;
+    background: rgba(0,0,0,.3);
+}
+//.progress-num ,
+//.progress-steps ,
+//.progress-energy {
+//    z-index: 2;
+//    position: absolute;
+//}
+
+/* 侧滑开关按钮 */
+.page-toggle {
+    position: absolute;
+    left: px2rpx(0);
+    top: px2rpx(170);
+    width: px2rpx(106);
+    height: px2rpx(96);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.weather {
+    position: absolute;
+    top: px2rpx(32);
+    left: px2rpx(20);
+    color: #ffffff;
+}
+.weather-temperature {
+    line-height: 1;
+    padding-left: px2rpx(42);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto px2rpx(34);
+}
+.weather-temperature-value {
+    height: px2rpx(36);
+    line-height: px2rpx(36);
+    font-size: px2rpx(36);
+}
+.weather-pm {
+    line-height: 1;
+}
+.weather-pm-value {
+    margin-left:px2rpx(4);
+    font-size: px2rpx(24);
+}
+.weather-pm-desc {
+    padding: px2rpx(2);
+    margin-left: px2rpx(4);
+    font-size: px2rpx(14);
+    border: solid px2rpx(1) #fff;
+    border-radius: px2rpx(2);
+    vertical-align: middle;
+}
+
+.broadcast {
+    position: absolute;
+    top: px2rpx(32);
+    left: px2rpx(145);
+    width: px2rpx(460);
+    height: px2rpx(48);
+    line-height: px2rpx(48);
+    font-size: px2rpx(20);
+    background-color: rgba(0,0,0,.5);
+    border-radius: px2rpx(6);
+    color: #b2f3f5;
+    overflow: hidden;
+}
+.broadcast-swiper {
+    background-repeat: no-repeat;
+    background-position: px2rpx(16) px2rpx(12);
+    background-size: px2rpx(24) px2rpx(24);
+}
+.broadcast-swiper-item-text {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: px2rpx(48);
+    padding: 0 px2rpx(48);
+
+}
+
+/* 活动 */
+.activity-item {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.activity-reward {
+    left: px2rpx(264);
+    top: 0;
+    width: px2rpx(160);
+    height: px2rpx(120);
+}
+.activity-habit {
+    left: px2rpx(508);
+    top: px2rpx(194);
+    width: px2rpx(190);
+    height: px2rpx(140);
+}
+.activity-road {
+    left: px2rpx(66);
+    top: px2rpx(390);
+    width: px2rpx(190);
+    height: px2rpx(120);
+}
+.activity-plan {
+    left: px2rpx(543);
+    top: px2rpx(509);
+    width: px2rpx(190);
+    height: px2rpx(120);
+}
+

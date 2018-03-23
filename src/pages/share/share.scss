@@ -1,0 +1,108 @@
+@import "../../public/scss/mixin";
+
+.num {
+    //@extend .font-AlternateGothicNo2BT;
+}
+.page {
+    line-height: 1;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.page-header {
+    display: flex;
+    flex-direction: row-reverse;
+    height: px2rpx(80);
+}
+
+// 换肤按钮
+.skin-switcher {
+    width: px2rpx(48);
+    height: px2rpx(48);
+    margin: px2rpx(18) px2rpx(18) 0 0;
+    background: no-repeat 0 0;
+    background-size: 100% 100%;
+
+    @extend .icon-change-skin;
+}
+
+.page-body {
+}
+
+.steps-today {
+    margin: px2rpx(360) 0 0 px2rpx(30);
+}
+.steps-today-header {
+    height: px2rpx(50);
+    line-height: px2rpx(50);
+    padding-left: px2rpx(38);
+    font-size: px2rpx(30);
+    background: no-repeat 0 0;
+    background-size: auto px2rpx(50);
+    @extend .icon-person;
+}
+.steps-today-body {
+    font-size: px2rpx(30);
+    .num {
+        font-size: px2rpx(100);
+    }
+}
+
+.steps-history {
+    margin: px2rpx(120) 0 0 px2rpx(30);
+}
+.steps-history-header {
+    height: px2rpx(40);
+    line-height: px2rpx(40);
+    padding-left: px2rpx(38);
+    font-size: px2rpx(30);
+    background: no-repeat 0 0;
+    background-size: px2rpx(38) px2rpx(40);
+    @extend .icon-shoe;
+}
+.steps-history-body {
+    font-size: px2rpx(30);
+    color: #c3cad9;
+}
+.steps-history-item {
+    margin-top: px2rpx(18);
+    font-size: px2rpx(24);
+    .num {
+        font-size: px2rpx(42);
+        color: #fff;
+        padding: 0 px2rpx(8);
+    }
+}
+
+.page-footer {
+    margin-left: px2rpx(58);
+    margin-top: px2rpx(140);
+}
+.share-list {
+    display: flex;
+    flex-direction: row;
+}
+.share-item {
+    width: px2rpx(90);
+    height: px2rpx(90);
+    margin-right: px2rpx(46);
+    background: no-repeat 0 0;
+    background-size: 100% 100%;
+}
+.share-friends {
+    @extend .icon-friends;
+}
+.share-wexin {
+    @extend .icon-wexin;
+}
+.share-qq {
+    @extend .icon-qq;
+}
+.share-qzone {
+    @extend .icon-qzone;
+}
+.share-weibo {
+    @extend .icon-weibo;
+}
+
+@import "share_images";

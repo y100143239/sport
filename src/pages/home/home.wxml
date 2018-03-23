@@ -1,0 +1,79 @@
+<view class="page">
+
+    <!-- 天空 -->
+    <view class="page-sky icon-weather-sunny">
+        <!-- 计步 -->
+        <view class="progress">
+            <view class="progress-ring">
+                <canvas class="progress-ring-canvas" canvas-id="innerRingProgressCanvas">
+                </canvas>
+                <canvas class="progress-ring-canvas" canvas-id="outerRingProgressCanvas">
+                    <cover-image class="progress-start" src="http://192.168.2.124:8080/src/assets/images/internet/home/icon_progress_footer.png"></cover-image>
+                </canvas>
+            </view>
+
+            <view class="progress-desc-bg"></view>
+            <view class="progress-desc">
+                <view class="progress-num"><text>目标完成75%</text></view>
+                <view class="progress-steps"><text class="progress-steps-num font-AlternateGothicNo2BT">1498</text>步</view>
+                <view class="progress-energy">
+                    <swiper autoplay="true" interval="3000" duration="1000" vertical="true" circular="true" >
+                        <swiper-item>
+                            <text class="progress-energy-item icon-fruit-apple">约消耗了1个苹果</text>
+                        </swiper-item>
+                        <swiper-item>
+                            <text class="progress-energy-item icon-fruit-apple">约消耗了2个番茄</text>
+                        </swiper-item>
+                    </swiper>
+                </view>
+                <!--<view class="progress-start icon-progress-footer"></view>-->
+            </view>
+        </view>
+
+        <!-- 广播 -->
+        <view class="broadcast">
+            <swiper class="broadcast-swiper icon-broadcast-horn" autoplay="true" interval="3000" duration="1000" circular="true">
+                <swiper-item>
+                    <text class="broadcast-swiper-item-text ">邓超给女儿梳小辫获表扬 网友：小花内心崩溃</text>
+                </swiper-item>
+                <swiper-item>
+                    <text class="broadcast-swiper-item-text">多多扮兔子吃草莓花样百出 网友调侃：塞牙缝了</text>
+                </swiper-item>
+            </swiper>
+        </view>
+
+        <!-- 天气 -->
+        <view class="weather">
+            <view class="weather-temperature icon-temperature-sunny">
+                <text class="weather-temperature-value ">15℃</text>
+            </view>
+            <view class="weather-pm">
+                <text class="weather-pm-value">PM2.5</text>
+                <text class="weather-pm-desc">良好</text>
+            </view>
+        </view>
+
+
+        <!-- 功能按钮 -->
+        <view class="fun-list">
+            <view class="fun-item icon-match"></view>
+            <view class="fun-item icon-reward"></view>
+            <view class="fun-item icon-gym"></view>
+        </view>
+
+        <!-- 侧滑页开关-->
+        <view class="page-toggle icon-toggle"></view>
+
+    </view>
+
+    <!-- 地图 -->
+    <view class="page-map icon-map">
+        <view class="activity-list">
+            <view class="activity-item activity-reward icon-indicator-reward"><!-- 红包赛 --></view>
+            <view class="activity-item activity-habit icon-indicator-habit"><!-- 习惯养成 --></view>
+            <view class="activity-item activity-road icon-indicator-road"><!-- 绿道赛 --></view>
+            <view class="activity-item activity-plan icon-indicator-plan"><!-- 掘金计划 --></view>
+        </view>
+    </view>
+
+</view>

@@ -1,0 +1,13 @@
+
+$host: "192.168.2.124:8080";
+
+// 网络图片的目录（开发）
+$dev-web-img-dir: "http://#{$host}/src/assets/images/internet";
+
+
+// 字体
+$dev-web-font-dir: "http://#{$host}/src/assets/font";
+
+
+$web-img-dir : $dev-web-img-dir;
+$web-font-dir : $dev-web-font-dir;

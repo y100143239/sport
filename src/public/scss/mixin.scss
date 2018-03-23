@@ -1,0 +1,4 @@
+//  px 转 rpx
+@function px2rpx($px) {
+    @return #{$px}rpx;
+}

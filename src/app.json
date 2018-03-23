@@ -1,0 +1,15 @@
+{
+  "debug": true,
+  "pages":[
+    "pages/share/share",
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffcd00",
+    "navigationBarTitleText": "运动掘金",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#ffcd00",
+    "enablePullDownRefresh": true
+  }
+}

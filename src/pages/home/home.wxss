@@ -1,0 +1,299 @@
+@charset "UTF-8";
+.icon-map {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_map.png);
+}
+
+.icon-weather-sunny {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_weather_sunny.png);
+}
+
+.icon-indicator-reward {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_indicator_reward.png);
+}
+
+.icon-indicator-habit {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_indicator_habit.png);
+}
+
+.icon-indicator-road {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_indicator_road.png);
+}
+
+.icon-indicator-plan {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_indicator_plan.png);
+}
+
+.icon-match {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_match.png);
+}
+
+.icon-reward {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_reward.png);
+}
+
+.icon-gym {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_gym.png);
+}
+
+.icon-toggle {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_toggle.png);
+}
+
+.icon-temperature-sunny {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_temperature_sunny.png);
+}
+
+.icon-fruit-apple {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_fruit_apple.png);
+}
+
+.icon-progress-footer {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_progress_footer.png);
+}
+
+.icon-broadcast-horn {
+  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/icon_broadcast_horn.png);
+}
+
+.page {
+  background-color: #c8f4fe;
+}
+
+.page-sky {
+  position: relative;
+  min-height: 650rpx;
+  background-repeat: repeat-x;
+}
+
+.page-map {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 686rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 右侧功能按钮 */
+.fun-list {
+  position: absolute;
+  right: 16rpx;
+  top: 52rpx;
+}
+
+.fun-item {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 12rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* 中央步数进度 */
+.progress {
+  position: absolute;
+  top: 100rpx;
+  left: 204rpx;
+  width: 356rpx;
+  height: 356rpx;
+  border-radius: 100%;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+.progress-num {
+  margin-top: 74rpx;
+  font-size: 24rpx;
+}
+
+.progress-steps {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+}
+
+.progress-steps-num {
+  font-size: 100rpx;
+}
+
+.progress-energy {
+  height: 28rpx;
+  margin-top: 24rpx;
+  font-size: 24rpx;
+  overflow: hidden;
+}
+
+.progress-energy-item {
+  height: 28rpx;
+  line-height: 28rpx;
+  padding-right: 30rpx;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 24rpx;
+}
+
+.progress-desc,
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.progress-ring {
+  z-index: 10;
+}
+
+.progress-desc {
+  z-index: 1;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.progress-ring {
+  border-radius: 100%;
+}
+
+.progress-ring-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102%;
+  height: 120%;
+}
+
+.progress-start {
+  position: absolute;
+  top: 314rpx;
+  left: 153rpx;
+  width: 64rpx;
+  height: 64rpx;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.progress-desc-bg {
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+  width: 318rpx;
+  height: 318rpx;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* 侧滑开关按钮 */
+.page-toggle {
+  position: absolute;
+  left: 0rpx;
+  top: 170rpx;
+  width: 106rpx;
+  height: 96rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.weather {
+  position: absolute;
+  top: 32rpx;
+  left: 20rpx;
+  color: #ffffff;
+}
+
+.weather-temperature {
+  line-height: 1;
+  padding-left: 42rpx;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 34rpx;
+}
+
+.weather-temperature-value {
+  height: 36rpx;
+  line-height: 36rpx;
+  font-size: 36rpx;
+}
+
+.weather-pm {
+  line-height: 1;
+}
+
+.weather-pm-value {
+  margin-left: 4rpx;
+  font-size: 24rpx;
+}
+
+.weather-pm-desc {
+  padding: 2rpx;
+  margin-left: 4rpx;
+  font-size: 14rpx;
+  border: solid 1rpx #fff;
+  border-radius: 2rpx;
+  vertical-align: middle;
+}
+
+.broadcast {
+  position: absolute;
+  top: 32rpx;
+  left: 145rpx;
+  width: 460rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 20rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6rpx;
+  color: #b2f3f5;
+  overflow: hidden;
+}
+
+.broadcast-swiper {
+  background-repeat: no-repeat;
+  background-position: 16rpx 12rpx;
+  background-size: 24rpx 24rpx;
+}
+
+.broadcast-swiper-item-text {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 48rpx;
+  padding: 0 48rpx;
+}
+
+/* 活动 */
+.activity-item {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.activity-reward {
+  left: 264rpx;
+  top: 0;
+  width: 160rpx;
+  height: 120rpx;
+}
+
+.activity-habit {
+  left: 508rpx;
+  top: 194rpx;
+  width: 190rpx;
+  height: 140rpx;
+}
+
+.activity-road {
+  left: 66rpx;
+  top: 390rpx;
+  width: 190rpx;
+  height: 120rpx;
+}
+
+.activity-plan {
+  left: 543rpx;
+  top: 509rpx;
+  width: 190rpx;
+  height: 120rpx;
+}
