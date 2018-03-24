@@ -114,4 +114,69 @@
     @extend .icon-torch;
 }
 
+.chart {
+
+}
+
+.chart-heading {
+    position: relative;
+    margin: 0 px2rpx(26);
+    height: px2rpx(72);
+    border-bottom: dashed px2rpx(1) #cbf5d5;
+}
+.date-switcher {
+    position: absolute;
+    top: px2rpx(17);
+    left: 0;
+    box-sizing: border-box;
+    width: px2rpx(78);
+    height: px2rpx(40);
+    padding: 0 px2rpx(12);
+    color: #fff;
+    font-size: px2rpx(22);
+    line-height: px2rpx(36);
+    border: solid px2rpx(2) rgba(255,255,255,0.84);
+    border-radius: px2rpx(40);
+    background-color: #7bcb91;
+    &::after {
+        content: "";
+        position: absolute;
+        top: px2rpx(2);
+        width: px2rpx(32);
+        height: px2rpx(32);
+        border-radius: 100%;
+        background-color: #fff;
+    }
+}
+.date-switcher-week {
+    text-align: right;
+    &::after {
+        left: px2rpx(2);
+    }
+}
+.date-switcher-month {
+    text-align: left;
+    &::after {
+        right: px2rpx(2);
+    }
+}
+.steps-toplimit {
+    position: absolute;
+    right: px2rpx(0);
+    top: px2rpx(44);
+    color: #3c6146;
+    line-height: 1;
+    font-size: px2rpx(24);
+
+}
+.chart-body {
+    width: 100%;
+    height: px2rpx(440);
+}
+
+.chart-line {
+    //height: px2rpx(440);
+    //transform: scale(0.5)
+}
+
 @import "stepstatistics_images";

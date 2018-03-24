@@ -21,7 +21,7 @@
             <view class="menu-item icon-friends">约运动</view>
             <view class="menu-item icon-sociality">社交圈子</view>
             <view class="menu-item icon-daily-trend">我的动态</view>
-            <view class="menu-item icon-statistics">健康数据</view>
+            <view class="menu-item icon-statistics" bindtap="goStepstatistics">健康数据</view>
             <view class="menu-item icon-wallet">掘金钱包</view>
             <view class="menu-item icon-rank">排行榜</view>
             <view class="menu-item icon-gratuity">打赏记录</view>

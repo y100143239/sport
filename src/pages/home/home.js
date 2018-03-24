@@ -104,5 +104,10 @@ Page( {
         wx.navigateTo({
             url: "/pages/share/share"
         });
+    },
+    goStepstatistics: function () {
+        wx.navigateTo({
+            url: "/pages/stepstatistics/stepstatistics"
+        });
     }
 } );

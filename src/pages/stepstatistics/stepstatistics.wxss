@@ -106,6 +106,66 @@
   margin-left: 112rpx;
 }
 
+.chart-heading {
+  position: relative;
+  margin: 0 26rpx;
+  height: 72rpx;
+  border-bottom: dashed 1rpx #cbf5d5;
+}
+
+.date-switcher {
+  position: absolute;
+  top: 17rpx;
+  left: 0;
+  box-sizing: border-box;
+  width: 78rpx;
+  height: 40rpx;
+  padding: 0 12rpx;
+  color: #fff;
+  font-size: 22rpx;
+  line-height: 36rpx;
+  border: solid 2rpx rgba(255, 255, 255, 0.84);
+  border-radius: 40rpx;
+  background-color: #7bcb91;
+}
+.date-switcher::after {
+  content: "";
+  position: absolute;
+  top: 2rpx;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.date-switcher-week {
+  text-align: right;
+}
+.date-switcher-week::after {
+  left: 2rpx;
+}
+
+.date-switcher-month {
+  text-align: left;
+}
+.date-switcher-month::after {
+  right: 2rpx;
+}
+
+.steps-toplimit {
+  position: absolute;
+  right: 0rpx;
+  top: 44rpx;
+  color: #3c6146;
+  line-height: 1;
+  font-size: 24rpx;
+}
+
+.chart-body {
+  width: 100%;
+  height: 440rpx;
+}
+
 .bg-egg, .today-steps {
   background-image: url(http://192.168.2.124:8080/src/assets/images/internet/stepstatistics/bg_egg.jpg);
 }

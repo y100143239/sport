@@ -1,8 +1,8 @@
 {
   "debug": true,
   "pages":[
-    "pages/stepstatistics/stepstatistics",
     "pages/home/home",
+    "pages/stepstatistics/stepstatistics",
     "pages/share/share"
   ],
   "window":{

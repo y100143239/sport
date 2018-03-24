@@ -23,7 +23,17 @@
         </view>
     </view>
 
-    <view class="page-footer">
+    <view class="page-footer chart">
+
+        <view class="chart-heading">
+            <view class="date-switcher {{ isMonth ? 'date-switcher-month' : 'date-switcher-week' }}"
+                  bindtap="switchDate">{{ isMonth ? '月' : '周' }}</view>
+            <view class="steps-toplimit font-AlternateGothicNo2BT">6500</view>
+        </view>
+        <view class="chart-body">
+            <!--<canvas canvas-id="lineCanvas" class="chart-line" disable-scroll="true" ></canvas>-->
+            <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+        </view>
 
     </view>
 
