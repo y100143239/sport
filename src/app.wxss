@@ -5,6 +5,10 @@ page,
   height: 100%;
 }
 
+.page {
+  overflow: hidden;
+}
+
 /* 字体*/
 .font-AlternateGothicNo2BT {
   font-family: "AlternateGothic2 BT" !important;

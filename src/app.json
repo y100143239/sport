@@ -1,6 +1,7 @@
 {
   "debug": true,
   "pages":[
+    "pages/stepstatistics/stepstatistics",
     "pages/home/home",
     "pages/share/share"
   ],

@@ -1,0 +1,117 @@
+@import "../../public/scss/mixin";
+
+.linear-gradient {
+    background: linear-gradient(#90e9a8, #d8f4c1);
+}
+
+.page {
+    @extend .linear-gradient;
+}
+
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    height: px2rpx(136);
+    font-size: px2rpx(26);
+    color: #aaaaaa;
+    line-height: 1;
+    text-align: center;
+    background-color: #f2f5f7;
+    box-sizing: border-box;
+    .num {
+        line-height: px2rpx(80);
+        font-size: px2rpx(48);
+        color: #5edc99;
+    }
+}
+
+
+.page-body {
+    height: px2rpx(534);
+    background-color: #f2f5f7;
+}
+.page-footer {
+    height: px2rpx(536);
+    @extend .linear-gradient;
+}
+
+.maxsteps-oneday,
+.total-sign {
+    width: 50%;
+    border: solid px2rpx(4) #f2f5f7;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.maxsteps-oneday {
+
+}
+.maxsteps-oneday-num {
+
+}
+.total-sign {
+    border-left: none 0;
+}
+
+.today-steps,
+.today-energy {
+    margin: 0 px2rpx(4);
+    background-color: #fff;
+}
+.today-steps {
+    box-sizing: border-box;
+    height: 80%;
+    padding-top: px2rpx(134);
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+    background: no-repeat center center #fff;
+    background-size: px2rpx(340) px2rpx(328);
+    @extend .bg-egg;
+}
+.today-steps-title {
+    font-size: px2rpx(26);
+}
+.today-steps-num {
+    font-size: px2rpx(100);
+    line-height: px2rpx(140);
+}
+.today-steps-msg {
+    font-size: px2rpx(26);
+    color: #e18921;
+}
+.today-energy {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    padding-top: px2rpx(28);
+    font-size: px2rpx(26);
+    line-height: 1;
+    color: #aaaaaa;
+    .num {
+        margin-left: px2rpx(16);
+        font-size: px2rpx(48);
+        color: #5edc99;
+        vertical-align: px2rpx(-3);
+    }
+}
+.today-energy-distance,
+.today-energy-torch {
+    box-sizing: border-box;
+    width: px2rpx(250);
+    height: px2rpx(40);
+    padding-left: px2rpx(42);
+    background: no-repeat left bottom;
+    background-size: auto 100%;
+}
+.today-energy-distance {
+    margin-left: px2rpx(100);
+    @extend .icon-distance;
+}
+.today-energy-torch {
+    margin-left: px2rpx(112);
+    @extend .icon-torch;
+}
+
+@import "stepstatistics_images";

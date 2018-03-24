@@ -1,0 +1,13 @@
+@import "../../public/scss/variables";
+
+.bg-egg {
+    background-image: url(#{$web-img-dir}/stepstatistics/bg_egg.jpg)
+}
+
+.icon-distance {
+    background-image: url(#{$web-img-dir}/stepstatistics/icon_distance.png)
+}
+
+.icon-torch {
+    background-image: url(#{$web-img-dir}/stepstatistics/icon_torch.png)
+}
