@@ -1,0 +1,8 @@
+@import "variables";
+@import "mixin";
+
+.icon-has-new {
+    width: px2rpx(24);
+    height: px2rpx(24);
+    background: url(#{$web-img-dir}/home/siderbar/icon_has_new.png) no-repeat 0 0;
+}

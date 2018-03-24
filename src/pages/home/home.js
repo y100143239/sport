@@ -80,12 +80,29 @@ function init() {
 }
 
 Page( {
-
+    data: {
+        isSidebarVisible: false
+    },
     onReady: function () {
 
         init();
 
         Ring.createBackground();
         Ring.dynamicDraw( .5 );
+    },
+
+    /**
+     * @description 处理侧边栏的显示与隐藏
+     */
+    toggleSidebar: function () {
+        let isSidebarVisible = this.data.isSidebarVisible;
+        this.setData( {
+            isSidebarVisible: !isSidebarVisible
+        } )
+    },
+    goSharePage: function () {
+        wx.navigateTo({
+            url: "/pages/share/share"
+        });
     }
 } );

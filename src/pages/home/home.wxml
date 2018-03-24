@@ -1,9 +1,9 @@
-<view class="page sidebar-visible">
+<view class='page {{isSidebarVisible? "sidebar-visible" : "sidebar-hidden" }}'>
 
     <!-- 天空 -->
     <view class="page-sky icon-weather-sunny">
         <!-- 计步 -->
-        <view class="progress">
+        <view class="progress" bindtap="goSharePage">
             <view class="progress-ring">
                 <canvas class="progress-ring-canvas" canvas-id="innerRingProgressCanvas">
                 </canvas>
@@ -78,5 +78,5 @@
     <include src="./sidebar.wxml"/>
 
     <!-- 侧滑页开关-->
-    <view class="sidebar-toggle icon-toggle"></view>
+    <view class="sidebar-toggle icon-toggle" bindtap="toggleSidebar"></view>
 </view>

@@ -1,8 +1,14 @@
 @charset "UTF-8";
+.sidebar-hidden .sidebar {
+  left: -100%;
+}
 .sidebar-hidden .sidebar-backdrop {
   display: none;
 }
 
+.sidebar-visible .sidebar {
+  left: 0;
+}
 .sidebar-visible .sidebar-backdrop {
   display: block;
 }
@@ -30,12 +36,11 @@
   z-index: 100;
   position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
   width: 520rpx;
   background: repeat-y 0 0;
   background-size: 100% auto;
-  transition: all .3s ease-in-out;
+  transition: all .2s ease-in;
 }
 
 .sidebar-header {
@@ -131,14 +136,41 @@
   flex-wrap: wrap;
   width: 480rpx;
   margin: 98rpx 0 0 52rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-shadow: rgba(2, 104, 128, 0.5) 2rpx 0 0, rgba(2, 104, 128, 0.5) 0 2rpx 0, rgba(2, 104, 128, 0.5) -2rpx 0 0, rgba(2, 104, 128, 0.5) 0 -1rpx 0;
 }
 
 .menu-item {
   width: 100rpx;
-  height: 100rpx;
-  margin: 0 57rpx 121rpx 0;
+  height: 40rpx;
+  padding-top: 100rpx;
+  margin: 0 57rpx 100rpx 0;
+  text-align: center;
+  line-height: 40rpx;
+  background: no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.divider-item {
+  position: absolute;
+  left: 0rpx;
+  width: 100%;
+  height: 20rpx;
   background: no-repeat 0 0;
   background-size: 100% 100%;
+}
+
+.divider-setting {
+  top: 360rpx;
+}
+
+.divider-row-1th {
+  top: 580rpx;
+}
+
+.divider-row-2th {
+  top: 820rpx;
 }
 
 .bg-body, .sidebar {
@@ -149,7 +181,7 @@
   background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_constellation.png);
 }
 
-.bg-divider {
+.bg-divider, .divider-item {
   background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/bg_divider.png);
 }
 
@@ -183,10 +215,6 @@
 
 .icon-gratuity {
   background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_gratuity.png);
-}
-
-.icon-has-new {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/home/siderbar/icon_has_new.png);
 }
 
 .icon-rank {
@@ -405,7 +433,7 @@
   height: 96rpx;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  transition: all .3s ease-in-out;
+  transition: all .3s ease-in;
 }
 
 .weather {
