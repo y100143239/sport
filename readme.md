@@ -40,13 +40,68 @@
                 config/                 # 配置
                     env.vars.js             # 环境变量
 
+
 ## 4. 样式
+
+### 4.1. 采用SCSS样式预处理器
 
 采用SCSS样式预处理器编写微信小程序样式。
 
 home.scss ==> home.wxss
 
-## 5. 资源
+### 4.2. 使用BEM命名规范
+
+**B__E_M，使用“-”作为连词符**
+
+如：competition-kinds__item_habit
+
+
+示例：
+
+    <view class="page">
+
+        <view class="page__header">
+            <view class="nav">
+                <view class="nav__item">推荐</view>
+                <view class="nav__item">赛历</view>
+            </view>
+        </view>
+
+        <view class="page__body">
+            <view class="competition">
+                <view class="competition__heading">
+                    <view class="competition-kinds">
+                        <view class="competition-kinds__item">
+                            <image class="icon"></image>
+                            <text class="text">习惯养成赛</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="competition-content"></view>
+            </view>
+        </view>
+
+    </view>
+
+## 5. 模块
+
+按一个页面一个模块的规则来划分，如：
+
+    ${root}/
+        src/
+            pages/
+                competition/        # 赛历
+                    index.js
+                    index.json
+                    index.wxml
+                    index.wxss
+                home/               # 主页
+                    index.js
+                    index.json
+                    index.wxml
+                    index.wxss
+
+## 6. 资源
 
     ${root}/
         assets/
@@ -55,7 +110,7 @@ home.scss ==> home.wxss
 
 静态资源不包含在源代码里，而使用URL进行访问。
 
-### 5.1. 图片
+### 6.1. 图片
 
     ${root}/
         assets/
@@ -65,7 +120,7 @@ home.scss ==> home.wxss
  * wxml 结构文件里，如 `<image src=".../1.png">`
  * wxss 样式文件里，如 `background-image: url(.../1.png);`
 
-#### 5.1.1. 在【wxml 结构文件里】里使用图片
+#### 6.1.1. 在【wxml 结构文件里】里使用图片
 
 1.查看配置文件：
 
@@ -92,7 +147,7 @@ home.scss ==> home.wxss
     /* ${root}/src/pages/home/home.wxml */
     <image src="{{ENV_VARS.webImagesDir}}/home/icon_progress_footer.png"></image>
 
-#### 5.1.2. 在【wxss 样式文件里】里使用图片
+#### 6.1.2. 在【wxss 样式文件里】里使用图片
 
 1.查看配置文件：
 
@@ -114,7 +169,7 @@ home.scss ==> home.wxss
         background-image: url(#{$web-img-dir}/home/icon_map.png);
     }
 
-### 5.2. 字体
+### 6.2. 字体
 
     ${root}/
         assets/
@@ -149,7 +204,7 @@ home.scss ==> home.wxss
 
 
 
-## 6. 数据交换规则
+## 7. 数据交换规则
 
     {
         "status": <number>      #   状态码 
