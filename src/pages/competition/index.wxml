@@ -2,7 +2,7 @@
 
     <view class="page__header">
         <view class="nav">
-            <view class="nav__item">推荐</view>
+            <view class="nav__item nav__item_hover">推荐</view>
             <view class="nav__item">赛历</view>
         </view>
     </view>
@@ -11,13 +11,37 @@
         <view class="competition">
             <view class="competition__heading">
                 <view class="competition-kinds">
-                    <view class="competition-kinds__item">
-                        <image class="icon"></image>
+                    <view class="competition-kinds__item competition-kinds__item_habit">
+                        <image class="icon" src="{{ENV_VARS.webImagesDir}}/competition/icon_habit.png"></image>
                         <text class="text">习惯养成赛</text>
+                    </view>
+                    <view class="competition-kinds__item competition-kinds__item_city">
+                        <image class="icon" src="{{ENV_VARS.webImagesDir}}/competition/icon_city.png"></image>
+                        <text class="text">城市赛</text>
+                    </view>
+                    <view class="competition-kinds__item competition-kinds__item_reward">
+                        <image class="icon" src="{{ENV_VARS.webImagesDir}}/competition/icon_reward.png"></image>
+                        <text class="text">赏金赛</text>
                     </view>
                 </view>
             </view>
-            <view class="competition-content"></view>
+            <view class="competition-content">
+                <view class="competition-list">
+                    <view class="competition-list__item">
+                        <view class="thumbnail">
+                            <image class="thumbnail__image" src="{{ENV_VARS.webImagesDir}}/competition/thumbnail_1.jpg"></image>
+                            <view class="thumbnail__caption">
+                                <view class="title">【东湖绿道】2018趣味城市赛</view>
+                                <view class="time-period">2018.05.03 ~ 2018.05.05 （倒计时：8天15时34分）</view>
+                                <view class="tag-list">
+                                    <text class="tag-list__item">进行中</text>
+                                    <text class="tag-list__item">趣味赛</text>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
         </view>
     </view>
 

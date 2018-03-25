@@ -1,0 +1,105 @@
+.icon-clock, .thumbnail__caption .time-period {
+  background-image: url(http://127.0.0.1:8080/assets/images//competition/icon_clock.png);
+}
+
+.page {
+  background-color: #f2f5f7;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100rpx;
+  font-size: 36rpx;
+  color: #999999;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: solid 4rpx #fff;
+}
+
+.nav__item_hover {
+  color: #ffaa00;
+  border-bottom-color: #ffaa00;
+}
+
+.competition__heading {
+  margin-top: 10rpx;
+  padding: 28rpx 0;
+  background-color: #fff;
+}
+
+.competition-kinds {
+  display: flex;
+  flex-direction: row;
+}
+
+.competition-kinds__item {
+  width: 33%;
+  line-height: 1;
+  text-align: center;
+}
+.competition-kinds__item .icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+.competition-kinds__item .text {
+  display: block;
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 18rpx;
+}
+
+.competition-content {
+  background-color: #fff;
+}
+
+.competition-list::before {
+  content: "";
+  display: block;
+  line-height: 1;
+  height: 0;
+}
+
+.competition-list__item {
+  margin-top: 10rpx;
+  padding: 20rpx;
+}
+
+.thumbnail__image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.thumbnail__caption .title {
+  font-size: 36rpx;
+  color: #333333;
+  line-height: 52rpx;
+}
+.thumbnail__caption .time-period {
+  padding-left: 32rpx;
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 38rpx;
+  background-repeat: no-repeat;
+  background-size: 24rpx 24rpx;
+  background-position: 0 6rpx;
+}
+.thumbnail__caption .tag-list {
+  line-height: 1;
+}
+.thumbnail__caption .tag-list__item {
+  padding: 0 20rpx;
+  margin-right: 10rpx;
+  font-size: 18rpx;
+  text-align: center;
+  color: #332200;
+  line-height: 30rpx;
+  border-radius: 100rpx;
+  background-color: #ffcd00;
+}

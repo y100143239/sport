@@ -1,6 +1,7 @@
 {
   "debug": true,
   "pages":[
+    "pages/competition/index",
     "pages/home/home",
     "pages/stepstatistics/stepstatistics",
     "pages/share/share"
