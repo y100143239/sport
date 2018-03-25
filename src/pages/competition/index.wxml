@@ -1,0 +1,24 @@
+<view class="page">
+
+    <view class="page__header">
+        <view class="nav">
+            <view class="nav__item">推荐</view>
+            <view class="nav__item">赛历</view>
+        </view>
+    </view>
+
+    <view class="page__body">
+        <view class="competition">
+            <view class="competition__heading">
+                <view class="competition-kinds">
+                    <view class="competition-kinds__item">
+                        <image class="icon"></image>
+                        <text class="text">习惯养成赛</text>
+                    </view>
+                </view>
+            </view>
+            <view class="competition-content"></view>
+        </view>
+    </view>
+
+</view>

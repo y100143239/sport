@@ -3,7 +3,7 @@
 
     <view class="sidebar-header">
         <view class="user-info">
-            <view class="user-info-avatar"><image class="user-info-avatar-image" src="../../assets/images/local/avatar_demo.jpg"></image></view>
+            <view class="user-info-avatar"><image class="user-info-avatar-image" src="{{ENV_VARS.webImagesDir}}/_local/avatar_demo.jpg"></image></view>
             <view class="user-info-cont">
                 <view class="user-info-cont-name">某某某</view>
                 <view class="user-info-cont-id">ID:122565770<view class="copy"></view></view>

@@ -1,9 +1,12 @@
+const ENV_VARS = require( "../../public/config/env.vars" );
+
 let
     Ring = {},
     ratio,
     ctx,
     grd,
-    timerId
+    timerId,
+    app = getApp()
 ;
 
 
@@ -81,7 +84,8 @@ function init() {
 
 Page( {
     data: {
-        isSidebarVisible: false
+        isSidebarVisible: false,
+        ENV_VARS: ENV_VARS
     },
     onReady: function () {
 

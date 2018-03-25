@@ -86,37 +86,37 @@
 }
 
 .icon-change-skin, .skin-switcher {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_change_skin.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_change_skin.png);
 }
 
 .icon-friends, .share-friends {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_friends.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_friends.png);
 }
 
 .icon-person, .steps-today-header {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_person.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_person.png);
 }
 
 .icon-qq, .share-qq {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_qq.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_qq.png);
 }
 
 .icon-qzone, .share-qzone {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_qzone.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_qzone.png);
 }
 
 .icon-shoe, .steps-history-header {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_shoe.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_shoe.png);
 }
 
 .icon-weibo, .share-weibo {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_weibo.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_weibo.png);
 }
 
 .icon-wexin, .share-wexin {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/icon_wexin.png);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/icon_wexin.png);
 }
 
 .skin-night {
-  background-image: url(http://192.168.2.124:8080/src/assets/images/internet/share/skin_night.jpg);
+  background-image: url(http://127.0.0.1:8080/assets/images//share/skin_night.jpg);
 }

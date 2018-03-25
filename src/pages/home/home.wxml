@@ -8,7 +8,7 @@
                 <canvas class="progress-ring-canvas" canvas-id="innerRingProgressCanvas">
                 </canvas>
                 <canvas class="progress-ring-canvas" canvas-id="outerRingProgressCanvas">
-                    <cover-image class="progress-start" src="http://192.168.2.124:8080/src/assets/images/internet/home/icon_progress_footer.png"></cover-image>
+                    <cover-image class="progress-start" src="{{ENV_VARS.webImagesDir}}/home/icon_progress_footer.png"></cover-image>
                 </canvas>
             </view>
 
