@@ -5,25 +5,11 @@
   background-size: 100% 100%;
 }
 
-.page-header {
-  display: flex;
-  flex-direction: row-reverse;
-  height: 80rpx;
+.today-steps {
+  margin: 420rpx 0 0 30rpx;
 }
 
-.skin-switcher {
-  width: 48rpx;
-  height: 48rpx;
-  margin: 18rpx 18rpx 0 0;
-  background: no-repeat 0 0;
-  background-size: 100% 100%;
-}
-
-.steps-today {
-  margin: 360rpx 0 0 30rpx;
-}
-
-.steps-today-header {
+.today-steps__header {
   height: 50rpx;
   line-height: 50rpx;
   padding-left: 38rpx;
@@ -32,18 +18,18 @@
   background-size: auto 50rpx;
 }
 
-.steps-today-body {
+.today-steps__body {
   font-size: 30rpx;
 }
-.steps-today-body .num {
+.today-steps__body .num {
   font-size: 100rpx;
 }
 
-.steps-history {
+.history-steps {
   margin: 120rpx 0 0 30rpx;
 }
 
-.steps-history-header {
+.history-steps__header {
   height: 40rpx;
   line-height: 40rpx;
   padding-left: 38rpx;
@@ -52,24 +38,23 @@
   background-size: 38rpx 40rpx;
 }
 
-.steps-history-body {
+.history-steps__body {
   font-size: 30rpx;
   color: #c3cad9;
 }
 
-.steps-history-item {
+.history-steps__item {
   margin-top: 18rpx;
   font-size: 24rpx;
 }
-.steps-history-item .num {
+.history-steps__item .num {
   font-size: 42rpx;
   color: #fff;
   padding: 0 8rpx;
 }
 
-.page-footer {
-  margin-left: 58rpx;
-  margin-top: 140rpx;
+.page__footer {
+  margin-top: 120rpx;
 }
 
 .share-list {
@@ -77,46 +62,19 @@
   flex-direction: row;
 }
 
-.share-item {
-  width: 90rpx;
-  height: 90rpx;
-  margin-right: 46rpx;
-  background: no-repeat 0 0;
-  background-size: 100% 100%;
+.share-list__item {
+  width: 33%;
+  text-align: center;
+}
+.share-list__item .image {
+  width: 112rpx;
+  height: 118rpx;
 }
 
-.icon-change-skin, .skin-switcher {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_change_skin.png);
-}
-
-.icon-friends, .share-friends {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_friends.png);
-}
-
-.icon-person, .steps-today-header {
+.icon-person, .today-steps__header {
   background-image: url(http://127.0.0.1:8080/assets/images/share/icon_person.png);
 }
 
-.icon-qq, .share-qq {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_qq.png);
-}
-
-.icon-qzone, .share-qzone {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_qzone.png);
-}
-
-.icon-shoe, .steps-history-header {
+.icon-shoe, .history-steps__header {
   background-image: url(http://127.0.0.1:8080/assets/images/share/icon_shoe.png);
-}
-
-.icon-weibo, .share-weibo {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_weibo.png);
-}
-
-.icon-wexin, .share-wexin {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_wexin.png);
-}
-
-.skin-night {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/skin_night.jpg);
 }

@@ -9,30 +9,16 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.page-header {
-    display: flex;
-    flex-direction: row-reverse;
-    height: px2rpx(80);
+.page__header {
 }
 
-// 换肤按钮
-.skin-switcher {
-    width: px2rpx(48);
-    height: px2rpx(48);
-    margin: px2rpx(18) px2rpx(18) 0 0;
-    background: no-repeat 0 0;
-    background-size: 100% 100%;
-
-    @extend .icon-change-skin;
+.page__body {
 }
 
-.page-body {
+.today-steps {
+    margin: px2rpx(420) 0 0 px2rpx(30);
 }
-
-.steps-today {
-    margin: px2rpx(360) 0 0 px2rpx(30);
-}
-.steps-today-header {
+.today-steps__header {
     height: px2rpx(50);
     line-height: px2rpx(50);
     padding-left: px2rpx(38);
@@ -41,17 +27,17 @@
     background-size: auto px2rpx(50);
     @extend .icon-person;
 }
-.steps-today-body {
+.today-steps__body {
     font-size: px2rpx(30);
     .num {
         font-size: px2rpx(100);
     }
 }
 
-.steps-history {
+.history-steps {
     margin: px2rpx(120) 0 0 px2rpx(30);
 }
-.steps-history-header {
+.history-steps__header {
     height: px2rpx(40);
     line-height: px2rpx(40);
     padding-left: px2rpx(38);
@@ -60,11 +46,11 @@
     background-size: px2rpx(38) px2rpx(40);
     @extend .icon-shoe;
 }
-.steps-history-body {
+.history-steps__body {
     font-size: px2rpx(30);
     color: #c3cad9;
 }
-.steps-history-item {
+.history-steps__item {
     margin-top: px2rpx(18);
     font-size: px2rpx(24);
     .num {
@@ -74,35 +60,20 @@
     }
 }
 
-.page-footer {
-    margin-left: px2rpx(58);
-    margin-top: px2rpx(140);
+.page__footer {
+    margin-top: px2rpx(120);
 }
 .share-list {
     display: flex;
     flex-direction: row;
 }
-.share-item {
-    width: px2rpx(90);
-    height: px2rpx(90);
-    margin-right: px2rpx(46);
-    background: no-repeat 0 0;
-    background-size: 100% 100%;
-}
-.share-friends {
-    @extend .icon-friends;
-}
-.share-wexin {
-    @extend .icon-wexin;
-}
-.share-qq {
-    @extend .icon-qq;
-}
-.share-qzone {
-    @extend .icon-qzone;
-}
-.share-weibo {
-    @extend .icon-weibo;
+.share-list__item {
+    width: 33%;
+    text-align: center;
+    .image {
+        width: px2rpx(112);
+        height: px2rpx(118);
+    }
 }
 
 @import "share_images";

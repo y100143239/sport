@@ -1,10 +1,10 @@
 {
   "debug": true,
   "pages":[
+    "pages/share/share",
     "pages/competition/index",
     "pages/home/home",
-    "pages/stepstatistics/stepstatistics",
-    "pages/share/share"
+    "pages/stepstatistics/stepstatistics"
   ],
   "window":{
     "backgroundTextStyle": "light",
