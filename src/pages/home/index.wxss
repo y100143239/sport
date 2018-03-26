@@ -1,0 +1,398 @@
+@charset "UTF-8";
+.weather {
+  color: #ffffff;
+}
+
+.weather__temperature {
+  line-height: 1;
+}
+.weather__temperature .image {
+  height: 34rpx;
+  width: 34rpx;
+  vertical-align: -4rpx;
+  margin-right: 4rpx;
+}
+.weather__temperature .value {
+  font-size: 36rpx;
+  line-height: 1;
+}
+
+.weather__pm {
+  margin-top: -4px;
+  line-height: 1;
+}
+.weather__pm .value {
+  margin-left: 4rpx;
+  font-size: 24rpx;
+}
+.weather__pm .desc {
+  padding: 2rpx;
+  margin-left: 4rpx;
+  font-size: 14rpx;
+  border: solid 1rpx #fff;
+  border-radius: 2rpx;
+  vertical-align: middle;
+}
+
+.broadcast {
+  width: 460rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-size: 20rpx;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6rpx;
+  color: #b2f3f5;
+}
+.broadcast::after {
+  content: "";
+  z-index: 10;
+  position: absolute;
+  bottom: -14rpx;
+  right: 17rpx;
+  width: 24rpx;
+  height: 14rpx;
+  background: url(http://127.0.0.1:8080/assets/images/home/broadcast_arrow.png) no-repeat 0 0;
+  background-size: 24rpx 14rpx;
+}
+
+.broadcast__swiper {
+  background: url(http://127.0.0.1:8080/assets/images/home/broadcast_horn.png) no-repeat 16rpx 12rpx;
+  background-size: 24rpx 24rpx;
+}
+.broadcast__swiper .text {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 48rpx;
+  padding: 0 48rpx;
+  overflow: hidden;
+}
+
+.entrance__item {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 12rpx;
+}
+.entrance__item .image {
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  position: absolute;
+  width: 100%;
+  height: 686rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.activity {
+  position: absolute;
+}
+
+.activity_reward {
+  left: 264rpx;
+  top: 0;
+  width: 160rpx;
+  height: 120rpx;
+}
+
+.activity_habit {
+  left: 508rpx;
+  top: 194rpx;
+  width: 190rpx;
+  height: 140rpx;
+}
+
+.activity_road {
+  left: 66rpx;
+  top: 390rpx;
+  width: 190rpx;
+  height: 120rpx;
+}
+
+.activity_plan {
+  left: 543rpx;
+  top: 509rpx;
+  width: 190rpx;
+  height: 120rpx;
+}
+
+/* 侧滑开关按钮 */
+.sidebar-toggle {
+  z-index: 100;
+  position: absolute;
+  left: 0rpx;
+  top: 176rpx;
+  width: 106rpx;
+  height: 96rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: all .3s ease-in;
+}
+
+.sidebar-hidden .sidebar {
+  left: -100%;
+}
+.sidebar-hidden .sidebar-backdrop {
+  display: none;
+}
+
+.sidebar-visible .sidebar {
+  left: 0;
+}
+.sidebar-visible .sidebar-backdrop {
+  display: block;
+}
+.sidebar-visible .progress-ring-canvas {
+  display: none;
+}
+.sidebar-visible .sidebar-toggle {
+  left: 520rpx;
+  top: 175rpx;
+  width: 98rpx;
+  height: 84rpx;
+}
+
+.sidebar-backdrop {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.sidebar {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 520rpx;
+  background: repeat-y 0 0;
+  background-size: 100% auto;
+  transition: all .2s ease-in;
+}
+
+.sidebar-header {
+  padding-top: 142rpx;
+  background: no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.user-info {
+  position: relative;
+  width: 100%;
+  height: 123rpx;
+  background: no-repeat right 0;
+  background-size: 491rpx 123rpx;
+}
+
+.user-info-avatar {
+  z-index: -1;
+  position: absolute;
+  top: 17rpx;
+  left: 48rpx;
+  width: 80rpx;
+  height: 80rpx;
+  overflow: hidden;
+}
+
+.user-info-avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.user-info-cont {
+  padding: 26rpx 0 0 156rpx;
+  line-height: 1;
+  color: #ad5210;
+}
+
+.user-info-cont-name {
+  font-size: 36rpx;
+}
+
+.user-info-cont-id {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.user-info-cont-id .copy {
+  position: absolute;
+  top: 68rpx;
+  left: 340rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.user-info-edit {
+  position: absolute;
+  top: 32rpx;
+  right: 50rpx;
+  width: 48rpx;
+  padding-bottom: 2rpx;
+  line-height: 1;
+  color: #d9940b;
+  font-size: 24rpx;
+  border-bottom: solid 2rpx;
+}
+
+.setting-list {
+  display: flex;
+  flex-direction: row;
+  margin: 20rpx 0 0 78rpx;
+  color: #fefefe;
+  font-size: 24rpx;
+}
+
+.setting-item {
+  width: 158rpx;
+  height: 48rpx;
+  padding-left: 24rpx;
+  line-height: 46rpx;
+  text-align: center;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+
+.setting-location {
+  margin-left: 50rpx;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480rpx;
+  margin: 98rpx 0 0 52rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-shadow: rgba(2, 104, 128, 0.5) 2rpx 0 0, rgba(2, 104, 128, 0.5) 0 2rpx 0, rgba(2, 104, 128, 0.5) -2rpx 0 0, rgba(2, 104, 128, 0.5) 0 -1rpx 0;
+}
+
+.menu-item {
+  width: 100rpx;
+  height: 40rpx;
+  padding-top: 100rpx;
+  margin: 0 57rpx 100rpx 0;
+  text-align: center;
+  line-height: 40rpx;
+  background: no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.divider-item {
+  position: absolute;
+  left: 0rpx;
+  width: 100%;
+  height: 20rpx;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+}
+
+.divider-setting {
+  top: 360rpx;
+}
+
+.divider-row-1th {
+  top: 580rpx;
+}
+
+.divider-row-2th {
+  top: 820rpx;
+}
+
+.bg-body, .sidebar {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_body.png);
+}
+
+.bg-constellation, .setting-constellation {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_constellation.png);
+}
+
+.bg-divider, .divider-item {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_divider.png);
+}
+
+.bg-header, .sidebar-header {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_header.png);
+}
+
+.bg-location, .setting-location {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_location.png);
+}
+
+.bg-profile, .user-info {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_profile.png);
+}
+
+.icon-about {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_about.png);
+}
+
+.icon-copy, .user-info-cont-id .copy {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_copy.png);
+}
+
+.icon-daily-trend {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_daily_trend.png);
+}
+
+.icon-friends {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_friends.png);
+}
+
+.icon-gratuity {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_gratuity.png);
+}
+
+.icon-rank {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_rank.png);
+}
+
+.icon-sidebar-toggle, .sidebar-visible .sidebar-toggle {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_sidebar_toggle.png);
+}
+
+.icon-sociality {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_sociality.png);
+}
+
+.icon-statistics {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_statistics.png);
+}
+
+.icon-wallet {
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_wallet.png);
+}
+
+.page {
+  background: no-repeat 0 0 #c8f4fe;
+  background-size: 100% auto;
+}
+
+.weather {
+  position: absolute;
+  top: 32rpx;
+  left: 20rpx;
+}
+
+.broadcast {
+  position: absolute;
+  top: 32rpx;
+  left: 145rpx;
+}
+
+.entrance {
+  position: absolute;
+  right: 16rpx;
+  top: 52rpx;
+}
+
+.map {
+  left: 0;
+  bottom: 0;
+}

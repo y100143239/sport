@@ -1,0 +1,205 @@
+@import "../../../public/scss/variables";
+@import "../../../public/scss/mixin";
+
+
+/* 侧滑开关按钮 */
+.sidebar-toggle {
+    z-index: 100;
+    position: absolute;
+    left: px2rpx(0);
+    top: px2rpx(176);
+    width: px2rpx(106);
+    height: px2rpx(96);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    transition: all .3s ease-in;
+}
+
+.sidebar-hidden {
+    .sidebar {
+        left: -100%;
+    }
+    .sidebar-backdrop {
+        display: none;
+    }
+}
+
+.sidebar-visible {
+    .sidebar {
+        left: 0;
+    }
+    .sidebar-backdrop {
+        display: block;
+    }
+    .progress-ring-canvas {
+        display: none;
+    }
+    .sidebar-toggle {
+        left: px2rpx(520);
+        top: px2rpx(175);
+        width: px2rpx(98);
+        height: px2rpx(84);
+        @extend .icon-sidebar-toggle;
+    }
+}
+
+.sidebar-backdrop {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.7);
+}
+
+
+.sidebar {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: px2rpx(520);
+    background: repeat-y 0 0;
+    background-size: 100% auto;
+
+    transition: all .2s ease-in;
+
+    @extend .bg-body;
+}
+
+.sidebar-header {
+    //height: px2rpx(360);
+    padding-top: px2rpx(142);
+    background: no-repeat 0 0;
+    background-size: 100% auto;
+    @extend .bg-header;
+}
+
+.user-info {
+    position: relative;
+    width: 100%;
+    height: px2rpx(123);
+    background: no-repeat right 0;
+    background-size: px2rpx(491) px2rpx(123);
+    @extend .bg-profile;
+}
+.user-info-avatar {
+    z-index: -1;
+    position: absolute;
+    top: px2rpx(17);
+    left: px2rpx(48);
+    width: px2rpx(80);
+    height: px2rpx(80);
+    //border-radius: 50%;
+    overflow: hidden;
+}
+.user-info-avatar-image {
+    width: 100%;
+    height: 100%;
+}
+.user-info-cont {
+    padding: px2rpx(26) 0 0 px2rpx(156);
+    line-height : 1;
+    color: #ad5210;
+}
+.user-info-cont-name {
+    font-size: px2rpx(36);
+}
+.user-info-cont-id {
+    margin-top: px2rpx(10);
+    font-size: px2rpx(24);
+    .copy {
+        position: absolute;
+        top: px2rpx(68);
+        left: px2rpx(340);
+        width: px2rpx(30);
+        height: px2rpx(30);
+        background: no-repeat 0 0;
+        background-size: 100% 100%;
+        @extend .icon-copy;
+    }
+}
+.user-info-edit {
+    position: absolute;
+    top: px2rpx(32);
+    right: px2rpx(50);
+    width: px2rpx(48);
+    padding-bottom: px2rpx(2);
+    line-height: 1;
+    color: #d9940b;
+    font-size: px2rpx(24);
+    border-bottom: solid px2rpx(2);
+}
+
+.setting-list {
+    display: flex;
+    flex-direction: row;
+    margin: px2rpx(20) 0 0 px2rpx(78);
+    color: #fefefe;
+    font-size: px2rpx(24);
+}
+
+.setting-item {
+    width: px2rpx(158);
+    height: px2rpx(48);
+    padding-left: px2rpx(24);
+    line-height: px2rpx(46);
+    text-align: center;
+    background: no-repeat 0 0;
+    background-size: 100% 100%;
+
+    box-sizing: border-box;
+}
+
+.setting-constellation {
+    @extend .bg-constellation;
+}
+
+.setting-location {
+    margin-left: px2rpx(50);
+    @extend .bg-location;
+}
+
+.menu-list {
+    display: flex;
+    //flex-direction: row;
+    flex-wrap: wrap;
+    width: px2rpx(480);
+    margin: px2rpx(98) 0 0 px2rpx(52);
+    color: #fff;
+    font-size: px2rpx(24);
+    text-shadow:rgba(2,104,128,.5) px2rpx(2) 0 0,rgba(2,104,128,.5) 0 px2rpx(2) 0,rgba(2,104,128,.5) px2rpx(-2) 0 0,rgba(2,104,128,.5) 0 px2rpx(-1) 0;
+}
+.menu-item {
+    width: px2rpx(100);
+    height: px2rpx(40);
+    padding-top: px2rpx(100);
+    margin: 0 px2rpx(57) px2rpx(100) 0;
+    text-align: center;
+    line-height: px2rpx(40);
+    background: no-repeat 0 0;
+    background-size: 100% auto;
+}
+
+.divider-item {
+    position: absolute;
+    left: px2rpx(0);
+    width: 100%;
+    height: px2rpx(20);
+    background: no-repeat 0 0;
+    background-size: 100% 100%;
+    @extend .bg-divider;
+}
+.divider-setting {
+    top: px2rpx(360);
+}
+.divider-row-1th {
+    top: px2rpx(580);
+}
+.divider-row-2th {
+    top: px2rpx(820);
+}
+
+@import "../sidebar_images";

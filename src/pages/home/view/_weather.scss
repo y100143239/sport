@@ -1,0 +1,35 @@
+@import "../../../public/scss/variables";
+@import "../../../public/scss/mixin";
+
+.weather {
+    color: #ffffff;
+}
+.weather__temperature {
+    line-height: 1;
+    .image {
+        height: px2rpx(34);
+        width: px2rpx(34);
+        vertical-align: px2rpx(-4);
+        margin-right: px2rpx(4);
+    }
+    .value {
+        font-size: px2rpx(36);
+        line-height: 1;
+    }
+}
+.weather__pm {
+    margin-top:-4px;
+    line-height: 1;
+    .value {
+        margin-left:px2rpx(4);
+        font-size: px2rpx(24);
+    }
+    .desc {
+        padding: px2rpx(2);
+        margin-left: px2rpx(4);
+        font-size: px2rpx(14);
+        border: solid px2rpx(1) #fff;
+        border-radius: px2rpx(2);
+        vertical-align: middle;
+    }
+}

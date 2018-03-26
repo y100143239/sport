@@ -1,0 +1,40 @@
+@import "../../public/scss/variables";
+@import "../../public/scss/mixin";
+
+@import "./view/weather";
+@import "./view/broadcast";
+@import "./view/entrance";
+@import "./view/map";
+@import "./view/sidebar";
+
+.page {
+    background: no-repeat 0 0 #c8f4fe;
+    background-size: 100% auto;
+}
+
+// 天气
+.weather {
+    position: absolute;
+    top: px2rpx(32);
+    left: px2rpx(20);
+}
+
+// 广播
+.broadcast {
+    position : absolute;
+    top      : px2rpx(32);
+    left     : px2rpx(145);
+}
+
+// 入口 - 按钮组
+.entrance {
+    position: absolute;
+    right: px2rpx(16);
+    top: px2rpx(52);
+}
+
+// 地图
+.map {
+    left: 0;
+    bottom: 0;
+}

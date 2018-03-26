@@ -28,8 +28,13 @@
             app.scss                # 小程序-样式
             app.wxss
             pages/                  # 页面
-                competition/            # 赛事
                 home/                   # 主页
+                    api/                    # 调用的API
+                    view/                   # 分离出去的界面组件
+                    home.wxml               # 主页
+                    home.scss               
+                    home.js
+                competition/            # 赛事
                 share/                  # 分享
                 stepstatistics/         # 健康数据
             public/                 # 公共

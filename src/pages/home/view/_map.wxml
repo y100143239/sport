@@ -1,0 +1,6 @@
+<view class="map" style="background-image:url({{map.ground}});">
+    <image class="activity activity_reward" src="{{map.reward}}"><!-- 红包赛 --></image>
+    <image class="activity activity_habit" src="{{map.habit}}"><!-- 习惯养成 --></image>
+    <image class="activity activity_road" src="{{map.road}}"><!-- 绿道赛 --></image>
+    <image class="activity activity_plan" src="{{map.plan}}"><!-- 掘金计划 --></image>
+</view>

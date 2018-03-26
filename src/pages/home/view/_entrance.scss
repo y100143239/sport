@@ -1,0 +1,14 @@
+@import "../../../public/scss/variables";
+@import "../../../public/scss/mixin";
+
+.entrance {
+}
+.entrance__item {
+    width: px2rpx(100);
+    height: px2rpx(100);
+    margin-bottom: px2rpx(12);
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}

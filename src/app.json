@@ -1,9 +1,9 @@
 {
   "debug": true,
   "pages":[
+    "pages/home/index",
     "pages/share/share",
     "pages/competition/index",
-    "pages/home/home",
     "pages/stepstatistics/stepstatistics"
   ],
   "window":{

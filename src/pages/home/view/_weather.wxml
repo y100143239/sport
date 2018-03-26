@@ -1,0 +1,10 @@
+<!-- 天气 -->
+<view class="weather">
+    <view class="weather__temperature">
+        <image class="image" src="{{weather.icon}}"/><text class="value">{{weather.value}}℃</text>
+    </view>
+    <view class="weather__pm">
+        <text class="value">PM{{weather.pm}}</text>
+        <text class="desc">{{weather.desc}}</text>
+    </view>
+</view>

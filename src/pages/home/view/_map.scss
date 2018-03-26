@@ -1,0 +1,38 @@
+@import "../../../public/scss/variables";
+@import "../../../public/scss/mixin";
+
+.map {
+    position: absolute;
+    width: 100%;
+    height: px2rpx(686);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.activity {
+    position: absolute;
+}
+.activity_reward {
+    left: px2rpx(264);
+    top: 0;
+    width: px2rpx(160);
+    height: px2rpx(120);
+}
+.activity_habit {
+    left: px2rpx(508);
+    top: px2rpx(194);
+    width: px2rpx(190);
+    height: px2rpx(140);
+}
+.activity_road {
+    left: px2rpx(66);
+    top: px2rpx(390);
+    width: px2rpx(190);
+    height: px2rpx(120);
+}
+.activity_plan {
+    left: px2rpx(543);
+    top: px2rpx(509);
+    width: px2rpx(190);
+    height: px2rpx(120);
+}
