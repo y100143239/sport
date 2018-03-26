@@ -1,0 +1,87 @@
+@import "../../public/scss/variables";
+@import "../../public/scss/mixin";
+@import "list_images";
+
+.list {
+
+}
+.list__heading {
+    background-color: #fff;
+    margin: px2rpx(10) 0;
+}
+.category-list {
+    display: flex;
+    flex-direction: row;
+}
+.category-list__item {
+    box-sizing: border-box;
+    width: 33%;
+    height: px2rpx(80);
+    padding-left: px2rpx(80);
+    font-size: px2rpx(28);
+    line-height: px2rpx(80);
+    color: #999999;
+    background-repeat: no-repeat;
+    background-position: px2rpx(44) px2rpx(23);
+    background-size: px2rpx(32) px2rpx(32);
+}
+
+.category-list__item_history {
+    @extend .icon_flag;
+}
+.category-list__item_now {
+    @extend .icon_flame;
+}
+.category-list__item_future {
+    @extend .icon_hourglass;
+}
+
+
+.category-list__item_active {
+    color: #ffaa00;
+
+    &.category-list__item_history {
+        @extend .icon_flag_hover;
+    }
+    &.category-list__item_now {
+        @extend .icon_flame_hover;
+    }
+    &.category-list__item_future {
+        @extend .icon_hourglass_hover;
+    }
+
+}
+
+.list__content {
+
+}
+.activity-list {
+    background-color: #fff;
+    padding: px2rpx(20);
+}
+.activity-list__item {
+    height: px2rpx(230);
+    margin-bottom: px2rpx(20);
+    .thumbnail {
+        height: 100%;
+        background: no-repeat 0 0;
+        background-size: 100% 100%;
+        border-radius: px2rpx(10);
+    }
+    .thumbnail__caption {
+        padding: px2rpx(36);
+        color: #fff;
+        .title {
+            color: #fff;
+        }
+        .time-period {
+            color: #cccccc;
+            @extend .icon_clock_gray;
+        }
+    }
+    .count-down {
+        margin-top: px2rpx(10);
+        color: #cccccc;
+        font-size: px2rpx(24);
+    }
+}

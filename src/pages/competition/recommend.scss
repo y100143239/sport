@@ -1,0 +1,90 @@
+@import "../../public/scss/variables";
+@import "../../public/scss/mixin";
+@import "recommend_images";;
+
+
+.recommend {
+
+}
+.recommend__heading {
+    margin-top: px2rpx(10);
+    padding: px2rpx(28) 0;
+    background-color: #fff;
+}
+.recommend-kinds {
+    display: flex;
+    flex-direction: row;
+}
+.recommend-kinds__item {
+    width: 33%;
+    line-height: 1;
+    text-align: center;
+    .icon {
+        width: px2rpx(100);
+        height: px2rpx(100);
+    }
+    .text {
+        display: block;
+        font-size: px2rpx(24);
+        color: #666666;
+        margin-top: px2rpx(18);
+    }
+}
+
+.recommend__content {
+    background-color: #fff;
+}
+.recommend-list {
+    &::before {
+        content: "";
+        display: block;
+        line-height: 1;
+        height: 0;
+    }
+}
+.recommend-list__item {
+    margin-top: px2rpx(10);
+    padding: px2rpx(20);
+}
+.thumbnail {
+
+}
+.thumbnail__image {
+    width: 100%;
+    border-radius: px2rpx(10);
+}
+.thumbnail__caption {
+    .title {
+        font-size: px2rpx(36);
+        color: #333333;
+        line-height: px2rpx(52);
+    }
+
+    .time-period {
+        padding-left: px2rpx(32);
+        font-size: px2rpx(24);
+        color: #666666;
+        line-height: px2rpx(38);
+        background-repeat : no-repeat;
+        background-size: px2rpx(24) px2rpx(24);
+        background-position: 0 px2rpx(6);
+        @extend .icon-clock;
+    }
+    .tag-list {
+        line-height: 1;
+    }
+    .tag-list__item {
+        padding: px2rpx(4) px2rpx(16);
+        margin-right: px2rpx(10);
+        font-size: px2rpx(18);
+        text-align: center;
+        color: #332200;
+        background-color: #ffcd00;
+        border: solid px2rpx(2) #ffcd00;
+        border-radius: px2rpx(100);
+    }
+    .tag-list__item_inverse {
+        color: #ffcd00;
+        background-color: transparent;
+    }
+}

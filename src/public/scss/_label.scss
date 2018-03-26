@@ -1,0 +1,22 @@
+/**
+ * @fileOverview 标签
+ * @author 吴钦飞（wuqinfei@qq.com）
+ */
+
+@import "mixin";
+
+$label-font-color: "#332200";
+$label-background-color: "#ffcd00";
+
+.label {
+    padding: px2rpx(4) px2rpx(16);
+    line-height: 1;
+    font-size: px2rpx(18);
+    color: $label-font-color;
+    background-color: $label-background-color;
+    border: solid $label-background-color px2rpx(2);
+}
+.label-inverse {
+    color: $label-background-color;
+    background-color: transparent;
+}

@@ -167,13 +167,13 @@
 }
 
 .bg-egg, .today-steps {
-  background-image: url(http://127.0.0.1:8080/assets/images//stepstatistics/bg_egg.jpg);
+  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/bg_egg.jpg);
 }
 
 .icon-distance, .today-energy-distance {
-  background-image: url(http://127.0.0.1:8080/assets/images//stepstatistics/icon_distance.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/icon_distance.png);
 }
 
 .icon-torch, .today-energy-torch {
-  background-image: url(http://127.0.0.1:8080/assets/images//stepstatistics/icon_torch.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/icon_torch.png);
 }

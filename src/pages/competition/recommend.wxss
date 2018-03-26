@@ -1,0 +1,79 @@
+.icon-clock, .thumbnail__caption .time-period {
+  background-image: url(http://127.0.0.1:8080/assets/images//competition/icon_clock.png);
+}
+
+.recommend__heading {
+  margin-top: 10rpx;
+  padding: 28rpx 0;
+  background-color: #fff;
+}
+
+.recommend-kinds {
+  display: flex;
+  flex-direction: row;
+}
+
+.recommend-kinds__item {
+  width: 33%;
+  line-height: 1;
+  text-align: center;
+}
+.recommend-kinds__item .icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+.recommend-kinds__item .text {
+  display: block;
+  font-size: 24rpx;
+  color: #666666;
+  margin-top: 18rpx;
+}
+
+.recommend-content {
+  background-color: #fff;
+}
+
+.recommend-list::before {
+  content: "";
+  display: block;
+  line-height: 1;
+  height: 0;
+}
+
+.recommend-list__item {
+  margin-top: 10rpx;
+  padding: 20rpx;
+}
+
+.thumbnail__image {
+  width: 100%;
+  border-radius: 10rpx;
+}
+
+.thumbnail__caption .title {
+  font-size: 36rpx;
+  color: #333333;
+  line-height: 52rpx;
+}
+.thumbnail__caption .time-period {
+  padding-left: 32rpx;
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 38rpx;
+  background-repeat: no-repeat;
+  background-size: 24rpx 24rpx;
+  background-position: 0 6rpx;
+}
+.thumbnail__caption .tag-list {
+  line-height: 1;
+}
+.thumbnail__caption .tag-list__item {
+  padding: 0 20rpx;
+  margin-right: 10rpx;
+  font-size: 18rpx;
+  text-align: center;
+  color: #332200;
+  line-height: 30rpx;
+  border-radius: 100rpx;
+  background-color: #ffcd00;
+}

@@ -174,123 +174,123 @@
 }
 
 .bg-body, .sidebar {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_body.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_body.png);
 }
 
 .bg-constellation, .setting-constellation {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_constellation.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_constellation.png);
 }
 
 .bg-divider, .divider-item {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_divider.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_divider.png);
 }
 
 .bg-header, .sidebar-header {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_header.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_header.png);
 }
 
 .bg-location, .setting-location {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_location.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_location.png);
 }
 
 .bg-profile, .user-info {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/bg_profile.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/bg_profile.png);
 }
 
 .icon-about {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_about.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_about.png);
 }
 
 .icon-copy, .user-info-cont-id .copy {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_copy.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_copy.png);
 }
 
 .icon-daily-trend {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_daily_trend.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_daily_trend.png);
 }
 
 .icon-friends {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_friends.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_friends.png);
 }
 
 .icon-gratuity {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_gratuity.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_gratuity.png);
 }
 
 .icon-rank {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_rank.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_rank.png);
 }
 
 .icon-sidebar-toggle, .sidebar-visible .sidebar-toggle {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_sidebar_toggle.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_sidebar_toggle.png);
 }
 
 .icon-sociality {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_sociality.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_sociality.png);
 }
 
 .icon-statistics {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_statistics.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_statistics.png);
 }
 
 .icon-wallet {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/siderbar/icon_wallet.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/siderbar/icon_wallet.png);
 }
 
 .icon-map {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_map.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_map.png);
 }
 
 .icon-weather-sunny {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_weather_sunny.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_weather_sunny.png);
 }
 
 .icon-indicator-reward {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_indicator_reward.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_indicator_reward.png);
 }
 
 .icon-indicator-habit {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_indicator_habit.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_indicator_habit.png);
 }
 
 .icon-indicator-road {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_indicator_road.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_indicator_road.png);
 }
 
 .icon-indicator-plan {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_indicator_plan.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_indicator_plan.png);
 }
 
 .icon-match {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_match.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_match.png);
 }
 
 .icon-reward {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_reward.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_reward.png);
 }
 
 .icon-gym {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_gym.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_gym.png);
 }
 
 .icon-toggle {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_toggle.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_toggle.png);
 }
 
 .icon-temperature-sunny {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_temperature_sunny.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_temperature_sunny.png);
 }
 
 .icon-fruit-apple {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_fruit_apple.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_fruit_apple.png);
 }
 
 .icon-progress-footer {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_progress_footer.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_progress_footer.png);
 }
 
 .icon-broadcast-horn {
-  background-image: url(http://127.0.0.1:8080/assets/images//home/icon_broadcast_horn.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/home/icon_broadcast_horn.png);
 }
 
 .page {

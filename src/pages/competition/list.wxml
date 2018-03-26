@@ -1,0 +1,30 @@
+<view class="list">
+
+    <view class="list__heading">
+        <view class="category-list">
+            <view class="category-list__item category-list__item_history">往期活动</view>
+            <view class="category-list__item category-list__item_now category-list__item_active">正在进行</view>
+            <view class="category-list__item category-list__item_future">即将推出</view>
+        </view>
+    </view>
+
+
+    <view class="list__content">
+        <view class="activity-list">
+            <view class="activity-list__item">
+                <view class="thumbnail" style="background-image:url({{ENV_VARS.webImagesDir}}/competition/recommend/thumbnail_1.jpg)">
+                    <view class="thumbnail__caption">
+                        <view class="title">【东湖绿道】2018趣味城市赛</view>
+                        <view class="time-period">2018.05.03 ~ 2018.05.05 （倒计时：8天15时34分）</view>
+                        <view class="tag-list">
+                            <text class="tag-list__item">进行中</text>
+                            <text class="tag-list__item tag-list__item_inverse">趣味赛</text>
+                        </view>
+                        <view class="count-down">倒计时：8天15时34分</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+</view>

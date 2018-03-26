@@ -1,72 +1,46 @@
 .icon-clock, .thumbnail__caption .time-period {
-  background-image: url(http://127.0.0.1:8080/assets/images//competition/icon_clock.png);
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/recommend/icon_clock.png);
 }
 
-.page {
-  background-color: #f2f5f7;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-}
-
-.nav__item {
-  box-sizing: border-box;
-  width: 50%;
-  height: 100rpx;
-  font-size: 36rpx;
-  color: #999999;
-  line-height: 100rpx;
-  text-align: center;
-  border-bottom: solid 4rpx #fff;
-}
-
-.nav__item_hover {
-  color: #ffaa00;
-  border-bottom-color: #ffaa00;
-}
-
-.competition__heading {
+.recommend__heading {
   margin-top: 10rpx;
   padding: 28rpx 0;
   background-color: #fff;
 }
 
-.competition-kinds {
+.recommend-kinds {
   display: flex;
   flex-direction: row;
 }
 
-.competition-kinds__item {
+.recommend-kinds__item {
   width: 33%;
   line-height: 1;
   text-align: center;
 }
-.competition-kinds__item .icon {
+.recommend-kinds__item .icon {
   width: 100rpx;
   height: 100rpx;
 }
-.competition-kinds__item .text {
+.recommend-kinds__item .text {
   display: block;
   font-size: 24rpx;
   color: #666666;
   margin-top: 18rpx;
 }
 
-.competition-content {
+.recommend__content {
   background-color: #fff;
 }
 
-.competition-list::before {
+.recommend-list::before {
   content: "";
   display: block;
   line-height: 1;
   height: 0;
 }
 
-.competition-list__item {
+.recommend-list__item {
   margin-top: 10rpx;
   padding: 20rpx;
 }
@@ -94,12 +68,128 @@
   line-height: 1;
 }
 .thumbnail__caption .tag-list__item {
-  padding: 0 20rpx;
+  padding: 4rpx 16rpx;
   margin-right: 10rpx;
   font-size: 18rpx;
   text-align: center;
   color: #332200;
-  line-height: 30rpx;
-  border-radius: 100rpx;
   background-color: #ffcd00;
+  border: solid 2rpx #ffcd00;
+  border-radius: 100rpx;
+}
+.thumbnail__caption .tag-list__item_inverse {
+  color: #ffcd00;
+  background-color: transparent;
+}
+
+.icon_flag, .category-list__item_history {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_flag.png);
+}
+
+.icon_flag_hover, .category-list__item_active.category-list__item_history {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_flag_hover.png);
+}
+
+.icon_flame, .category-list__item_now {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_flame.png);
+}
+
+.icon_flame_hover, .category-list__item_active.category-list__item_now {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_flame_hover.png);
+}
+
+.icon_hourglass, .category-list__item_future {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_hourglass.png);
+}
+
+.icon_hourglass_hover, .category-list__item_active.category-list__item_future {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_hourglass_hover.png);
+}
+
+.icon_clock_gray, .activity-list__item .thumbnail__caption .time-period {
+  background-image: url(http://127.0.0.1:8080/assets/images/competition/list/icon_clock_gray.png);
+}
+
+.list__heading {
+  background-color: #fff;
+  margin: 10rpx 0;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.category-list__item {
+  box-sizing: border-box;
+  width: 33%;
+  height: 80rpx;
+  padding-left: 80rpx;
+  font-size: 28rpx;
+  line-height: 80rpx;
+  color: #999999;
+  background-repeat: no-repeat;
+  background-position: 44rpx 23rpx;
+  background-size: 32rpx 32rpx;
+}
+
+.category-list__item_active {
+  color: #ffaa00;
+}
+
+.activity-list {
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.activity-list__item {
+  height: 230rpx;
+  margin-bottom: 20rpx;
+}
+.activity-list__item .thumbnail {
+  height: 100%;
+  background: no-repeat 0 0;
+  background-size: 100% 100%;
+  border-radius: 10rpx;
+}
+.activity-list__item .thumbnail__caption {
+  padding: 36rpx;
+  color: #fff;
+}
+.activity-list__item .thumbnail__caption .title {
+  color: #fff;
+}
+.activity-list__item .thumbnail__caption .time-period {
+  color: #cccccc;
+}
+.activity-list__item .count-down {
+  margin-top: 10rpx;
+  color: #cccccc;
+  font-size: 24rpx;
+}
+
+.page {
+  background-color: #f2f5f7;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100rpx;
+  font-size: 36rpx;
+  color: #999999;
+  line-height: 100rpx;
+  text-align: center;
+  border-bottom: solid 4rpx #fff;
+}
+
+.nav__item_hover {
+  color: #ffaa00;
+  border-bottom-color: #ffaa00;
 }

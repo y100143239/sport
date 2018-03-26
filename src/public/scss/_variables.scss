@@ -1,7 +1,7 @@
 // 主机
 $host: "127.0.0.1:8080/assets";
 // 网络图片的目录（开发）
-$dev-web-img-dir: "http://#{$host}/images/";
+$dev-web-img-dir: "http://#{$host}/images";
 // 字体
 $dev-web-font-dir: "http://#{$host}/font";
 
