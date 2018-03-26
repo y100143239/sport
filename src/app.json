@@ -5,6 +5,7 @@
     "pages/share/share",
     "pages/competition/index",
     "pages/stepstatistics/stepstatistics"
+
   ],
   "window":{
     "backgroundTextStyle": "light",
