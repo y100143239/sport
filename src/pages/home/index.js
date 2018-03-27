@@ -1,6 +1,8 @@
 const ENV_VARS = require( "../../public/config/env.vars" );
+const Steps = require( "./view/_steps" );
 
 Page( {
+
     data: {
         ENV_VARS: ENV_VARS,
         backgroundImage: ENV_VARS.webImagesDir + "/home/page_bg.png",
@@ -28,15 +30,33 @@ Page( {
             road: ENV_VARS.webImagesDir + "/home/map_road.png",
             plan: ENV_VARS.webImagesDir + "/home/map_plan.png"
         },
+        sidebar: {
+            visible: false
+        },
+        steps: {
+            percentage: 75,
+            total: 14989,
+            calories: [
+                { category: "apple", text: "苹果", num: 1, imageUrl: `${ENV_VARS.webImagesDir}/home/steps_apple.png` },
+                { category: "pear", text: "梨子", num: 2, imageUrl: `${ENV_VARS.webImagesDir}/home/steps_apple.png` }
+            ]
+        }
 
+    },
+
+    onReady: function () {
+        Steps.init();
+        Steps.dynamicDraw( .75 );
     },
     /**
      * @description 处理侧边栏的显示与隐藏
      */
     toggleSidebar: function () {
-        let isSidebarVisible = this.data.isSidebarVisible;
+        let visible = this.data.sidebar.visible;
         this.setData( {
-            isSidebarVisible: !isSidebarVisible
+            sidebar: {
+                visible: !visible
+            }
         } )
     },
 } );

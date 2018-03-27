@@ -6,10 +6,14 @@
 @import "./view/entrance";
 @import "./view/map";
 @import "./view/sidebar";
+@import "./view/steps";
 
 .page {
     background: no-repeat 0 0 #c8f4fe;
     background-size: 100% auto;
+}
+.page__body {
+    height: 100%;
 }
 
 // 天气
@@ -37,4 +41,15 @@
 .map {
     left: 0;
     bottom: 0;
+}
+
+// 侧边栏
+.sidebar {
+
+}
+
+// 计步
+.steps {
+    top: px2rpx(100);
+    left: px2rpx(204);
 }

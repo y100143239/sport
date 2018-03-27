@@ -1,13 +1,12 @@
 {
   "debug": true,
-  "pages":[
+  "pages": [
     "pages/home/index",
     "pages/share/share",
     "pages/competition/index",
     "pages/stepstatistics/stepstatistics"
-
   ],
-  "window":{
+  "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffcd00",
     "navigationBarTitleText": "运动掘金",

@@ -1,4 +1,4 @@
-<view class="page {{isSidebarVisible? 'sidebar-visible' : 'sidebar-hidden' }}" style="background-image:url({{backgroundImage}});">
+<view class="page" style="background-image:url({{backgroundImage}});">
 
     <view class="page__header">
 
@@ -18,11 +18,11 @@
         <!-- 侧边栏 -->
         <include src="./view/_sidebar.wxml"></include>
 
-
-        <!-- 步数统计 -->
-
         <!-- 地图 -->
         <include src="./view/_map.wxml"></include>
+
+        <!-- 步数统计 -->
+        <include src="./view/_steps.wxml"></include>
 
     </view>
 

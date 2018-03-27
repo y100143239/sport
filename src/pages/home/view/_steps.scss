@@ -1,0 +1,92 @@
+@import "../../../public/scss/variables";
+@import "../../../public/scss/mixin";
+
+
+/* 中央步数进度 */
+
+.steps {
+    position: absolute;
+    //top: px2rpx(100);
+    //left: px2rpx(204);
+    width: px2rpx(356);
+    height: px2rpx(356);
+    border-radius: 100%;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+}
+
+.detail__percentage {
+    margin-top: px2rpx(74);
+    font-size: px2rpx(24);
+}
+.detail__total {
+    margin-top: px2rpx(24);
+    font-size: px2rpx(28);
+}
+.total__num {
+    font-size: px2rpx(100);
+}
+.detail__calories {
+    height: px2rpx(30);
+    margin-top: px2rpx(24);
+    line-height: px2rpx(30);
+    font-size: px2rpx(24);
+    overflow: hidden;
+}
+
+.calories__item {
+    height: 100%;
+    .image {
+        width: px2rpx(30);
+        height: px2rpx(30);
+        vertical-align: px2rpx(-4);
+    }
+}
+
+.steps__detail,
+.steps__ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.steps__ring {
+    z-index: 10;
+}
+.steps__detail {
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+
+
+.steps__ring {
+    border-radius: 100%;
+}
+.ring__canvas {
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 102%;
+    height: 120%;
+}
+.steps__refresh {
+    position: absolute;
+    top: px2rpx(314);
+    left: px2rpx((356-50)/2);
+    width: px2rpx(64);
+    height: px2rpx(64);
+}
+
+.steps__ring_bg {
+    position: absolute;
+    top: px2rpx(20);
+    left: px2rpx(20);
+    width: px2rpx(356-40+2);
+    height: px2rpx(356-40+2);
+    border-radius: 100%;
+    background: rgba(0,0,0,.3);
+}

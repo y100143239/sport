@@ -30,7 +30,12 @@
             pages/                  # 页面
                 home/                   # 主页
                     api/                    # 调用的API
-                    view/                   # 分离出去的界面组件
+                        index.js                # 主要集中放置URL
+                    view/                   # 分离出去的界面部分，
+                        _sidebar.wxml           # 通过 <include src="./view/_sidebar.wxml"> 引入
+                        _sidebar.scss           # 通过 @import "./view/sidebar" 引入
+                        _map.wxml
+                        _map.scss
                     home.wxml               # 主页
                     home.scss               
                     home.js
@@ -95,16 +100,12 @@ home.scss ==> home.wxss
     ${root}/
         src/
             pages/
-                competition/        # 赛历
-                    index.js
-                    index.json
-                    index.wxml
-                    index.wxss
                 home/               # 主页
-                    index.js
-                    index.json
-                    index.wxml
-                    index.wxss
+                    home.js
+                    home.wxml
+                    home.wxss
+                    view/
+
 
 ## 6. 资源
 

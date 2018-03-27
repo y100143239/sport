@@ -1,0 +1,28 @@
+<!-- 计步 -->
+<view class="steps" bindtap="goSharePage">
+    <view class="steps__ring">
+        <canvas class="ring__canvas" canvas-id="innerRingProgressCanvas">
+        </canvas>
+        <canvas class="ring__canvas" canvas-id="outerRingProgressCanvas">
+            <cover-image class="steps__refresh" src="{{ENV_VARS.webImagesDir}}/home/steps_refresh.png"></cover-image>
+        </canvas>
+    </view>
+
+    <view class="steps__ring_bg"></view>
+    <view class="steps__detail">
+        <view class="detail__percentage"><text>目标完成{{steps.percentage}}%</text></view>
+        <view class="detail__total"><text class="total__num font-AlternateGothicNo2BT">{{steps.total}}</text>步</view>
+        <view class="detail__calories">
+            <swiper autoplay="true" interval="3000" duration="1000" vertical="true" circular="true" >
+
+                <block wx:for="{{steps.calories}}" wx:key="category">
+                    <swiper-item>
+                        <view class="calories__item">
+                            约消耗了{{item.num}}个{{item.text}} <image class="image" src="{{item.imageUrl}}"></image>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+</view>

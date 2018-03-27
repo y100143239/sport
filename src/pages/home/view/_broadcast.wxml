@@ -1,6 +1,6 @@
 <view class="broadcast">
     <swiper class="broadcast__swiper" autoplay="true" interval="3000" duration="1000" circular="true">
-        <block wx:for="{{broadcast.list}}">
+        <block wx:for="{{broadcast.list}}" wx:key="*this">
             <swiper-item>
                 <text class="text">{{item}}</text>
             </swiper-item>
