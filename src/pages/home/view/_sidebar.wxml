@@ -4,7 +4,7 @@
 
     <view class="sidebar__header">
         <view class="user-info">
-            <view class="user-info__avatar"><image class="avatar__image" src="{{ENV_VARS.webImagesDir}}/_local/avatar_demo.jpg"></image></view>
+            <view class="user-info__avatar"><image class="avatar__image" src="{{sidebar.image.avatar}}"></image></view>
             <view class="user-info__cont">
                 <view class="cont__name">某某某</view>
                 <view class="cont__id">ID:122565770<view class="copy"></view></view>
@@ -19,14 +19,15 @@
             <view class="setting__item setting-location">武汉</view>
         </view>
         <view class="menu">
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_friends.png)">约运动</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_sociality.png)">社交圈子</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_daily_trend.png)">我的动态</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_statistics.png)" bindtap="goStepstatistics">健康数据</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_wallet.png)">掘金钱包</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_rank.png)">排行榜</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_gratuity.png)">打赏记录</view>
-            <view class="menu__item" style="background-image:url({{ENV_VARS.webImagesDir}}/home/sidebar_about.png)">关于掘金</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.friends}})">约运动</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.sociality}})">社交圈子</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.daily_trend}})">我的动态</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.statistics}})"
+                  bindtap="navigateTo" data-page="/pages/stepstatistics/stepstatistics">健康数据</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.wallet}})">掘金钱包</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.rank}})">排行榜</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.gratuity}})">打赏记录</view>
+            <view class="menu__item" style="background-image:url({{sidebar.image.about}})">关于掘金</view>
         </view>
         <view class="divider">
             <view class="divider__item divider-row-1th"></view>

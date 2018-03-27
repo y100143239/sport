@@ -1,35 +1,16 @@
+const ENV_VARS = require( "../../public/config/env.vars" );
+
 let
-    Ring
+    Ring = {},
+    ratio,
+    ctx,
+    grd,
+    timerId
 ;
 
-Ring = {
-    //
-    timerId: null,
-    // 按 375px 标准算出来的尺寸，其他屏幕需要适配
-    ratio: null,
-    // canvas 上下文
-    ctx: null,
-    // 渐变
-    gradient: null
-};
-
-
-Ring.init = function () {
-    this.ratio = wx.getSystemInfoSync().windowWidth / 375;
-
-    this.ctx = wx.createCanvasContext( "outerRingProgressCanvas" );
-
-    this.gradient = this.ctx.createLinearGradient( 0, 0, 200, 0 );
-    this.gradient.addColorStop( 0, "#ff9500" );
-    this.gradient.addColorStop( 1, "#ffd400" );
-    this.createBackground();
-};
 
 Ring.createBackground = function () {
-    let
-        ratio = this.ratio,
-        ctx = wx.createCanvasContext( "innerRingProgressCanvas" )
-    ;
+    let ctx = wx.createCanvasContext( "innerRingProgressCanvas" );
     // 白色圆环
     ctx.setLineWidth( 10 * ratio );
     ctx.setLineCap( "round" );
@@ -56,17 +37,12 @@ Ring.createBackground = function () {
  * @param percent {number} 0% ~ 100%
  */
 Ring.draw = function ( percent ) {
-    let
-        ctx = this.ctx,
-        gradient = this.gradient,
-        ratio = this.ratio
-    ;
 
     // 清除
     ctx.clearRect( 0, 0, 400, 400 );
 
     ctx.setLineWidth( 10 * ratio );
-    ctx.setStrokeStyle( gradient );
+    ctx.setStrokeStyle( grd );
     ctx.setLineCap( "round" );
     ctx.beginPath();
     ctx.arc( 178 / 2 * ratio, 178 / 2 * ratio, (178 / 2 - 5) * ratio, Math.PI / 2, 2 * Math.PI * percent + Math.PI / 2, false );
@@ -80,13 +56,11 @@ Ring.draw = function ( percent ) {
  */
 Ring.dynamicDraw = function ( percent ) {
     let
-        timerId = this.timerId,
         now = 0,
         interval = percent / 50
     ;
     if ( timerId ) {
         clearInterval( timerId );
-        this.timerId = null;
     }
     timerId = setInterval( function () {
         now += interval;
@@ -97,4 +71,46 @@ Ring.dynamicDraw = function ( percent ) {
     }, 20 );
 };
 
-module.exports = Ring;
+function init() {
+    ratio = wx.getSystemInfoSync().windowWidth / 375;
+
+    ctx = wx.createCanvasContext( "outerRingProgressCanvas" );
+
+    grd = ctx.createLinearGradient( 0, 0, 200, 0 );
+    grd.addColorStop( 0, "#ff9500" );
+    grd.addColorStop( 1, "#ffd400" );
+}
+
+Page( {
+    data: {
+        isSidebarVisible: false,
+        ENV_VARS: ENV_VARS
+    },
+    onReady: function () {
+
+        init();
+
+        Ring.createBackground();
+        Ring.dynamicDraw( .5 );
+    },
+
+    /**
+     * @description 处理侧边栏的显示与隐藏
+     */
+    toggleSidebar: function () {
+        let isSidebarVisible = this.data.isSidebarVisible;
+        this.setData( {
+            isSidebarVisible: !isSidebarVisible
+        } )
+    },
+    goSharePage: function () {
+        wx.navigateTo({
+            url: "/pages/share/share"
+        });
+    },
+    goStepstatistics: function () {
+        wx.navigateTo({
+            url: "/pages/stepstatistics/stepstatistics"
+        });
+    }
+} );

@@ -1,11 +1,12 @@
 @import "../../public/scss/variables";
 @import "../../public/scss/mixin";
-@import "list_images";
 
 .list {
-
+    
 }
 .list__heading {
+    position: relative;
+    z-index: 2;
     background-color: #fff;
     margin: px2rpx(10) 0;
 }
@@ -21,19 +22,18 @@
     font-size: px2rpx(28);
     line-height: px2rpx(80);
     color: #999999;
-    background-repeat: no-repeat;
-    background-position: px2rpx(44) px2rpx(23);
+    background: no-repeat px2rpx(44) px2rpx(23);
     background-size: px2rpx(32) px2rpx(32);
 }
 
 .category-list__item_history {
-    @extend .icon_flag;
+    background-image: url(#{$web-img-dir}/competition/list/icon_flag.png);
 }
 .category-list__item_now {
-    @extend .icon_flame;
+    background-image: url(#{$web-img-dir}/competition/list/icon_flame.png);
 }
 .category-list__item_future {
-    @extend .icon_hourglass;
+    background-image: url(#{$web-img-dir}/competition/list/icon_hourglass.png);
 }
 
 
@@ -41,23 +41,31 @@
     color: #ffaa00;
 
     &.category-list__item_history {
-        @extend .icon_flag_hover;
+        background-image: url(#{$web-img-dir}/competition/list/icon_flag_hover.png);
     }
     &.category-list__item_now {
-        @extend .icon_flame_hover;
+        background-image: url(#{$web-img-dir}/competition/list/icon_flag_hover.png);
     }
     &.category-list__item_future {
-        @extend .icon_hourglass_hover;
+        background-image: url(#{$web-img-dir}/competition/list/icon_hourglass_hover.png);
     }
 
 }
 
 .list__content {
-
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: px2rpx(200);
 }
 .activity-list {
-    background-color: #fff;
+    box-sizing: border-box;
+    height: 100%;
     padding: px2rpx(20);
+    background-color: #fff;
 }
 .activity-list__item {
     height: px2rpx(230);
@@ -76,11 +84,11 @@
         }
         .time-period {
             color: #cccccc;
-            @extend .icon_clock_gray;
+            background-image: url(#{$web-img-dir}/competition/list/icon_clock_gray.png);
         }
     }
     .count-down {
-        margin-top: px2rpx(10);
+        margin-top: px2rpx(14);
         color: #cccccc;
         font-size: px2rpx(24);
     }

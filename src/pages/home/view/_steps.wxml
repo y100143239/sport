@@ -1,10 +1,10 @@
 <!-- 计步 -->
-<view class="steps" bindtap="goSharePage">
-    <view class="steps__ring">
+<view class="steps" bindtap="navigateTo" data-page="/pages/share/share">
+    <view class="steps__ring" style="display: {{ sidebar.visible ? 'none': 'block' }};">
         <canvas class="ring__canvas" canvas-id="innerRingProgressCanvas">
         </canvas>
         <canvas class="ring__canvas" canvas-id="outerRingProgressCanvas">
-            <cover-image class="steps__refresh" src="{{ENV_VARS.webImagesDir}}/home/steps_refresh.png"></cover-image>
+            <cover-image class="steps__refresh" bindtap="refreshSteps" src="{{ENV_VARS.webImagesDir}}/home/steps_refresh.png"></cover-image>
         </canvas>
     </view>
 

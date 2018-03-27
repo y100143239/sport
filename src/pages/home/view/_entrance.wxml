@@ -1,5 +1,6 @@
 <view class="entrance">
-    <view class="entrance__item"><image class="image" src="{{entrance.match}}"/></view>
+    <view class="entrance__item"
+          bindtap="navigateTo" data-page="/pages/competition/index"><image class="image" src="{{entrance.match}}"/></view>
     <view class="entrance__item"><image class="image" src="{{entrance.reward}}"/></view>
     <view class="entrance__item"><image class="image" src="{{entrance.gym}}"/></view>
 </view>

@@ -2,13 +2,15 @@
 
     <view class="page__header">
         <view class="nav">
-            <view class="nav__item nav__item_hover">推荐</view>
-            <view class="nav__item">赛历</view>
+            <view class="nav__item {{ currentTab === 0 ? 'nav__item_hover' : ''}}"
+                  data-current="0" bindtap="switchNav">推荐</view>
+            <view class="nav__item {{ currentTab === 1 ? 'nav__item_hover' : ''}}"
+                  data-current="1" bindtap="switchNav">赛历</view>
         </view>
     </view>
 
     <view class="page__body">
-        <!--<include src="./recommend.wxml"/>-->
+        <include src="./recommend.wxml"/>
         <include src="./list.wxml"/>
     </view>
 

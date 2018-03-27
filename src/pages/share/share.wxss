@@ -14,7 +14,7 @@
   line-height: 50rpx;
   padding-left: 38rpx;
   font-size: 30rpx;
-  background: no-repeat 0 0;
+  background: url(http://192.168.2.124:8080/assets/images/share/icon_person.png) no-repeat 0 0;
   background-size: auto 50rpx;
 }
 
@@ -34,7 +34,7 @@
   line-height: 40rpx;
   padding-left: 38rpx;
   font-size: 30rpx;
-  background: no-repeat 0 0;
+  background: url(http://192.168.2.124:8080/assets/images/share/icon_shoe.png) no-repeat 0 0;
   background-size: 38rpx 40rpx;
 }
 
@@ -69,12 +69,4 @@
 .share-list__item .image {
   width: 112rpx;
   height: 118rpx;
-}
-
-.icon-person, .today-steps__header {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_person.png);
-}
-
-.icon-shoe, .history-steps__header {
-  background-image: url(http://127.0.0.1:8080/assets/images/share/icon_shoe.png);
 }

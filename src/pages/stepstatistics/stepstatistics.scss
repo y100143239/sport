@@ -1,4 +1,5 @@
 @import "../../public/scss/mixin";
+@import "../../public/scss/variables";
 
 .linear-gradient {
     background: linear-gradient(#90e9a8, #d8f4c1);
@@ -9,7 +10,7 @@
 }
 
 
-.page-header {
+.page__header {
     display: flex;
     flex-direction: row;
     height: px2rpx(136);
@@ -27,11 +28,11 @@
 }
 
 
-.page-body {
+.page__body {
     height: px2rpx(534);
     background-color: #f2f5f7;
 }
-.page-footer {
+.page__footer {
     height: px2rpx(536);
     @extend .linear-gradient;
 }
@@ -65,18 +66,17 @@
     text-align: center;
     line-height: 1;
     color: #fff;
-    background: no-repeat center center #fff;
+    background: url(#{$web-img-dir}/stepstatistics/bg_egg.jpg) no-repeat center center #fff;
     background-size: px2rpx(340) px2rpx(328);
-    @extend .bg-egg;
 }
-.today-steps-title {
+.today-steps__title {
     font-size: px2rpx(26);
 }
-.today-steps-num {
+.today-steps__num {
     font-size: px2rpx(100);
     line-height: px2rpx(140);
 }
-.today-steps-msg {
+.today-steps__msg {
     font-size: px2rpx(26);
     color: #e18921;
 }
@@ -96,8 +96,8 @@
         vertical-align: px2rpx(-3);
     }
 }
-.today-energy-distance,
-.today-energy-torch {
+.today-energy__distance,
+.today-energy__calories {
     box-sizing: border-box;
     width: px2rpx(250);
     height: px2rpx(40);
@@ -105,20 +105,20 @@
     background: no-repeat left bottom;
     background-size: auto 100%;
 }
-.today-energy-distance {
+.today-energy__distance {
     margin-left: px2rpx(100);
-    @extend .icon-distance;
+    background-image: url(#{$web-img-dir}/stepstatistics/icon_distance.png);
 }
-.today-energy-torch {
+.today-energy__calories {
     margin-left: px2rpx(112);
-    @extend .icon-torch;
+    background-image: url(#{$web-img-dir}/stepstatistics/icon_torch.png);
 }
 
 .chart {
 
 }
 
-.chart-heading {
+.chart__heading {
     position: relative;
     margin: 0 px2rpx(26);
     height: px2rpx(72);
@@ -169,7 +169,7 @@
     font-size: px2rpx(24);
 
 }
-.chart-body {
+.chart__body {
     width: 100%;
     height: px2rpx(440);
 }
@@ -179,4 +179,3 @@
     //transform: scale(0.5)
 }
 
-@import "stepstatistics_images";

@@ -1,9 +1,10 @@
 {
   "debug": true,
   "pages": [
-    "pages/home/index",
-    "pages/share/share",
+    "pages/home/home",
     "pages/competition/index",
+    "pages/competition/city",
+    "pages/share/share",
     "pages/stepstatistics/stepstatistics"
   ],
   "window": {

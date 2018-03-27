@@ -1,99 +1,3 @@
-.recommend {
-  margin-top: 10rpx;
-}
-
-.recommend__heading {
-  box-sizing: border-box;
-  z-index: 2;
-  position: relative;
-  height: 200rpx;
-  padding-top: 28rpx;
-  background-color: #fff;
-}
-
-.recommend-kinds {
-  display: flex;
-  flex-direction: row;
-}
-
-.recommend-kinds__item {
-  width: 33%;
-  line-height: 1;
-  text-align: center;
-}
-.recommend-kinds__item .icon {
-  width: 100rpx;
-  height: 100rpx;
-}
-.recommend-kinds__item .text {
-  display: block;
-  font-size: 24rpx;
-  color: #666666;
-  margin-top: 18rpx;
-}
-
-.recommend__content {
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 320rpx;
-}
-
-.recommend-list {
-  height: 100%;
-  background-color: #fff;
-}
-.recommend-list::before {
-  content: "";
-  display: block;
-  line-height: 1;
-  height: 0;
-}
-
-.recommend-list__item {
-  margin-bottom: 10rpx;
-  padding: 20rpx;
-}
-
-.thumbnail__image {
-  width: 100%;
-  border-radius: 10rpx;
-}
-
-.thumbnail__caption .title {
-  font-size: 36rpx;
-  color: #333333;
-  line-height: 52rpx;
-}
-.thumbnail__caption .time-period {
-  padding-left: 32rpx;
-  font-size: 24rpx;
-  color: #666666;
-  line-height: 38rpx;
-  background: url(http://192.168.2.124:8080/assets/images/competition/recommend/icon_clock.png) no-repeat 0 6rpx;
-  background-size: 24rpx 24rpx;
-}
-.thumbnail__caption .tag-list {
-  line-height: 1;
-}
-.thumbnail__caption .tag-list__item {
-  padding: 4rpx 16rpx;
-  margin-right: 10rpx;
-  font-size: 18rpx;
-  text-align: center;
-  color: #332200;
-  background-color: #ffcd00;
-  border: solid 2rpx #ffcd00;
-  border-radius: 100rpx;
-}
-.thumbnail__caption .tag-list__item_inverse {
-  color: #ffcd00;
-  background-color: transparent;
-}
-
 .list__heading {
   position: relative;
   z-index: 2;
@@ -187,34 +91,42 @@
   font-size: 24rpx;
 }
 
-.page {
-  position: relative;
-  background-color: #f2f5f7;
+.list__content {
+  padding-top: 10rpx;
 }
 
-.page__header {
-  position: relative;
-  z-index: 2;
+.thumbnail__image {
+  width: 100%;
+  border-radius: 10rpx;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
-}
-
-.nav__item {
-  box-sizing: border-box;
-  width: 50%;
-  height: 100rpx;
+.thumbnail__caption .title {
   font-size: 36rpx;
-  color: #999999;
-  line-height: 100rpx;
-  text-align: center;
-  border-bottom: solid 4rpx #fff;
+  color: #333333;
+  line-height: 52rpx;
 }
-
-.nav__item_hover {
-  color: #ffaa00;
-  border-bottom-color: #ffaa00;
+.thumbnail__caption .time-period {
+  padding-left: 32rpx;
+  font-size: 24rpx;
+  color: #666666;
+  line-height: 38rpx;
+  background: url(http://192.168.2.124:8080/assets/images/competition/recommend/icon_clock.png) no-repeat 0 6rpx;
+  background-size: 24rpx 24rpx;
+}
+.thumbnail__caption .tag-list {
+  line-height: 1;
+}
+.thumbnail__caption .tag-list__item {
+  padding: 4rpx 16rpx;
+  margin-right: 10rpx;
+  font-size: 18rpx;
+  text-align: center;
+  color: #332200;
+  background-color: #ffcd00;
+  border: solid 2rpx #ffcd00;
+  border-radius: 100rpx;
+}
+.thumbnail__caption .tag-list__item_inverse {
+  color: #ffcd00;
+  background-color: transparent;
 }

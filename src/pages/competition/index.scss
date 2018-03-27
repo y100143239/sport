@@ -4,9 +4,13 @@
 @import "list";
 
 .page {
+    position: relative;
     background-color: #f2f5f7;
 }
-
+.page__header {
+    position: relative;
+    z-index: 2;
+}
 .nav {
     display: flex;
     flex-direction: row;

@@ -1,0 +1,45 @@
+@import "../../public/scss/variables";
+@import "../../public/scss/mixin";
+@import "./list";
+
+.list__content {
+    padding-top: px2rpx(10);
+}
+
+.thumbnail__image {
+    width: 100%;
+    border-radius: px2rpx(10);
+}
+.thumbnail__caption {
+    .title {
+        font-size: px2rpx(36);
+        color: #333333;
+        line-height: px2rpx(52);
+    }
+
+    .time-period {
+        padding-left: px2rpx(32);
+        font-size: px2rpx(24);
+        color: #666666;
+        line-height: px2rpx(38);
+        background : url(#{$web-img-dir}/competition/recommend/icon_clock.png) no-repeat 0 px2rpx(6);
+        background-size: px2rpx(24) px2rpx(24);
+    }
+    .tag-list {
+        line-height: 1;
+    }
+    .tag-list__item {
+        padding: px2rpx(4) px2rpx(16);
+        margin-right: px2rpx(10);
+        font-size: px2rpx(18);
+        text-align: center;
+        color: #332200;
+        background-color: #ffcd00;
+        border: solid px2rpx(2) #ffcd00;
+        border-radius: px2rpx(100);
+    }
+    .tag-list__item_inverse {
+        color: #ffcd00;
+        background-color: transparent;
+    }
+}

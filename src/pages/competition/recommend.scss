@@ -1,14 +1,16 @@
 @import "../../public/scss/variables";
 @import "../../public/scss/mixin";
-@import "recommend_images";;
 
 
 .recommend {
-
+    margin-top: px2rpx(10);
 }
 .recommend__heading {
-    margin-top: px2rpx(10);
-    padding: px2rpx(28) 0;
+    box-sizing: border-box;
+    z-index: 2;
+    position: relative;
+    height: px2rpx(200);
+    padding-top: px2rpx(28);
     background-color: #fff;
 }
 .recommend-kinds {
@@ -32,9 +34,19 @@
 }
 
 .recommend__content {
-    background-color: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: px2rpx(320);
+    //background-color: #fff;
 }
 .recommend-list {
+    //margin-top: px2rpx(10);
+    height: 100%;
+    background-color: #fff;
     &::before {
         content: "";
         display: block;
@@ -43,7 +55,7 @@
     }
 }
 .recommend-list__item {
-    margin-top: px2rpx(10);
+    margin-bottom: px2rpx(10);
     padding: px2rpx(20);
 }
 .thumbnail {
@@ -65,10 +77,8 @@
         font-size: px2rpx(24);
         color: #666666;
         line-height: px2rpx(38);
-        background-repeat : no-repeat;
+        background : url(#{$web-img-dir}/competition/recommend/icon_clock.png) no-repeat 0 px2rpx(6);
         background-size: px2rpx(24) px2rpx(24);
-        background-position: 0 px2rpx(6);
-        @extend .icon-clock;
     }
     .tag-list {
         line-height: 1;

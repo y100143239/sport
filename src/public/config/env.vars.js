@@ -1,3 +1,3 @@
 module.exports = {
-    "webImagesDir": "http://127.0.0.1:8080/assets/images"
+    "webImagesDir": "http://192.168.2.124:8080/assets/images"
 };

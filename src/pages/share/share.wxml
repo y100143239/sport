@@ -1,4 +1,4 @@
-<view class="page" style="background-image: url({{ENV_VARS.webImagesDir}}/_local/skin_night.jpg)">
+<view class="page" style="background-image: url({{image.skin}})">
 
     <view class="page__header">
         
@@ -8,15 +8,15 @@
 
         <view class="today-steps">
             <view class="today-steps__header">今日步数</view>
-            <view class="today-steps__body"><text class="num font-AlternateGothicNo2BT">4852</text>步</view>
+            <view class="today-steps__body"><text class="num font-AlternateGothicNo2BT">{{statistics.today}}</text>步</view>
         </view>
 
         <view class="history-steps">
             <view class="history-steps__header">历史运动</view>
             <view class="history-steps__body">
-                <view class="history-steps__item">累计运动<text class="num font-AlternateGothicNo2BT">32</text>天</view>
-                <view class="history-steps__item">本周健走<text class="num font-AlternateGothicNo2BT">28958</text>步</view>
-                <view class="history-steps__item">本月健走<text class="num font-AlternateGothicNo2BT">129695</text>步</view>
+                <view class="history-steps__item">累计运动<text class="num font-AlternateGothicNo2BT">{{statistics.numOfDays}}</text>天</view>
+                <view class="history-steps__item">本周健走<text class="num font-AlternateGothicNo2BT">{{statistics.week}}</text>步</view>
+                <view class="history-steps__item">本月健走<text class="num font-AlternateGothicNo2BT">{{statistics.month}}</text>步</view>
             </view>
 
         </view>
@@ -25,9 +25,9 @@
 
     <view class="page__footer">
         <view class="share-list">
-            <view class="share-list__item"><image class="image" src="{{ENV_VARS.webImagesDir}}/share/icon_share.png"></image></view>
-            <view class="share-list__item"><image class="image" src="{{ENV_VARS.webImagesDir}}/share/icon_exchange.png"></image></view>
-            <view class="share-list__item"><image class="image" src="{{ENV_VARS.webImagesDir}}/share/icon_download.png"></image></view>
+            <view class="share-list__item"><image class="image" src="{{image.share}}"></image></view>
+            <view class="share-list__item"><image class="image" src="{{image.exchange}}"></image></view>
+            <view class="share-list__item"><image class="image" src="{{image.download}}"></image></view>
         </view>
     </view>
 

@@ -1,4 +1,5 @@
 @import "../../public/scss/mixin";
+@import "../../public/scss/variables";
 
 .page {
     line-height: 1;
@@ -20,9 +21,8 @@
     line-height: px2rpx(50);
     padding-left: px2rpx(38);
     font-size: px2rpx(30);
-    background: no-repeat 0 0;
+    background: url(#{$web-img-dir}/share/icon_person.png) no-repeat 0 0;
     background-size: auto px2rpx(50);
-    @extend .icon-person;
 }
 .today-steps__body {
     font-size: px2rpx(30);
@@ -39,9 +39,8 @@
     line-height: px2rpx(40);
     padding-left: px2rpx(38);
     font-size: px2rpx(30);
-    background: no-repeat 0 0;
+    background: url(#{$web-img-dir}/share/icon_shoe.png) no-repeat 0 0;
     background-size: px2rpx(38) px2rpx(40);
-    @extend .icon-shoe;
 }
 .history-steps__body {
     font-size: px2rpx(30);
@@ -73,4 +72,3 @@
     }
 }
 
-@import "share_images";

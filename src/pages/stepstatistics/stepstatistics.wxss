@@ -1,8 +1,8 @@
-.linear-gradient, .page, .page-footer {
+.linear-gradient, .page, .page__footer {
   background: linear-gradient(#90e9a8, #d8f4c1);
 }
 
-.page-header {
+.page__header {
   display: flex;
   flex-direction: row;
   height: 136rpx;
@@ -13,18 +13,18 @@
   background-color: #f2f5f7;
   box-sizing: border-box;
 }
-.page-header .num {
+.page__header .num {
   line-height: 80rpx;
   font-size: 48rpx;
   color: #5edc99;
 }
 
-.page-body {
+.page__body {
   height: 534rpx;
   background-color: #f2f5f7;
 }
 
-.page-footer {
+.page__footer {
   height: 536rpx;
 }
 
@@ -53,20 +53,20 @@
   text-align: center;
   line-height: 1;
   color: #fff;
-  background: no-repeat center center #fff;
+  background: url(http://192.168.2.124:8080/assets/images/stepstatistics/bg_egg.jpg) no-repeat center center #fff;
   background-size: 340rpx 328rpx;
 }
 
-.today-steps-title {
+.today-steps__title {
   font-size: 26rpx;
 }
 
-.today-steps-num {
+.today-steps__num {
   font-size: 100rpx;
   line-height: 140rpx;
 }
 
-.today-steps-msg {
+.today-steps__msg {
   font-size: 26rpx;
   color: #e18921;
 }
@@ -88,8 +88,8 @@
   vertical-align: -3rpx;
 }
 
-.today-energy-distance,
-.today-energy-torch {
+.today-energy__distance,
+.today-energy__calories {
   box-sizing: border-box;
   width: 250rpx;
   height: 40rpx;
@@ -98,15 +98,17 @@
   background-size: auto 100%;
 }
 
-.today-energy-distance {
+.today-energy__distance {
   margin-left: 100rpx;
+  background-image: url(http://192.168.2.124:8080/assets/images/stepstatistics/icon_distance.png);
 }
 
-.today-energy-torch {
+.today-energy__calories {
   margin-left: 112rpx;
+  background-image: url(http://192.168.2.124:8080/assets/images/stepstatistics/icon_torch.png);
 }
 
-.chart-heading {
+.chart__heading {
   position: relative;
   margin: 0 26rpx;
   height: 72rpx;
@@ -161,19 +163,7 @@
   font-size: 24rpx;
 }
 
-.chart-body {
+.chart__body {
   width: 100%;
   height: 440rpx;
-}
-
-.bg-egg, .today-steps {
-  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/bg_egg.jpg);
-}
-
-.icon-distance, .today-energy-distance {
-  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/icon_distance.png);
-}
-
-.icon-torch, .today-energy-torch {
-  background-image: url(http://127.0.0.1:8080/assets/images/stepstatistics/icon_torch.png);
 }

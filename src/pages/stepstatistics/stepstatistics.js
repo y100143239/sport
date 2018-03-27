@@ -81,35 +81,55 @@ let
                 }
             }
         ]
-    };
+    },
+    chart
+;
 
 function initChart(canvas, width, height) {
-    const chart = echarts.init(canvas, null, {
+
+    chart = echarts.init(canvas, null, {
         width: width,
         height: height
     });
+
     canvas.setChart(chart);
 
     chart.setOption(option);
-    return chart;
+
+    // return chart;
 }
 
 Page( {
     data: {
         isMonth: false,
+
+        // 单日最高步数
+        maxSteps: 6186,
+
+        // 总打卡天数
+        totalSign: 12,
+
+        // 今日步数
+        todaySteps: 3491,
+
+        // 信息
+        msg: "还不错",
+
+        // 公里
+        distance: 2.5,
+
+        //
+        calories: 101,
+
+        // 顶部上限
+        topLimit: 6500,
+
         ec: {
             onInit: initChart
         }
     },
 
-    onLoad: function (e) {
-        var windowWidth = 320;
-        try {
-            var res = wx.getSystemInfoSync();
-            windowWidth = res.windowWidth;
-        } catch ( e ) {
-            console.error( 'getSystemInfoSync failed!' );
-        }
+    onLoad: function () {
     },
     switchDate: function () {
         let isMonth = this.data.isMonth;
